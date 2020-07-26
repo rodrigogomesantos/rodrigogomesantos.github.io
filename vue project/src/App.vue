@@ -1,22 +1,30 @@
 <template>
   <div>
-<Nav />
+    <Nav />
     <div class="container">
       <Introduction />
+      <Phrase />
+      <Recognition />
       <Experience />
       <Skills />
       <Education />
     </div>
+    <Contact />
+    <i class="fab fa-github"></i>
   </div>
 </template>
 
 <script>
 import Education from "./components/Education.vue";
+import Recognition from "./components/Recognition";
 import Experience from "./components/Experience.vue";
 import Skills from "./components/Skills";
 import Nav from "./components/Nav";
-import Introduction from "./components/Introduction"
+import Introduction from "./components/Introduction";
+import Phrase from "./components/Phrase";
+import Contact from "./components/Contact";
 
+// import "font-awesome/css/font-awesome.css"
 
 export default {
   name: "app",
@@ -26,10 +34,13 @@ export default {
     Experience,
     Skills,
     Introduction,
+    Phrase,
+    Contact,
+    Recognition,
   },
   data() {
     return {};
-  }
+  },
 };
 </script>
 

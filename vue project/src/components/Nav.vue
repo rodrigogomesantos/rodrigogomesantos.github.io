@@ -1,9 +1,9 @@
 <template>
-<nav class="nav">
+<scrollactive class="nav scrollactive" active-class="active">
      <ul class="nav-list button">
-       <li v-for="(nav, index) in chooseLanguage(nav)" :key="index"><a  v-bind:href="nav.link"> {{nav.title}}</a></li>       
+       <li v-for="(nav, index) in chooseLanguage(nav)" :key="index"><a class="scrollactive-item" v-bind:href="nav.link"><span></span><p>{{nav.title}}</p></a></li>       
     </ul>
-</nav>
+</scrollactive>
 </template>
 
 <script>
@@ -17,24 +17,28 @@ export default {
             nav: {
         pt: [
            {
-            title: "Inicio",
-            link: "/#",
+            title: "Início",
+            link: "#intro",
           },
           {
             title: "Reconhecimentos",
-            link: "/#recognition ",
-          },
-            {
-            title: "Habilidades",
-            link: "/#skills",
+            link: "#recognition ",
           },
             {
             title: "Experiências",
-            link: "/#experience",
+            link: "#experience",
+          },
+           {
+            title: "Habilidades",
+            link: "#skills",
           },
             {
             title: "Educação formal",
-            link: "/#education",
+            link: "#education",
+          },
+          {
+            title: "Contato",
+            link: "#contact",
           },
        
         ],
@@ -42,24 +46,28 @@ export default {
         en: [
           {
             title: "Recognition",
-            link: "/#recognition ",
+            link: "#recognition ",
           },
             {
             title: "Skills",
-            link: "/#skills",
+            link: "#skills",
           },
             {
             title: "Education",
-            link: "/#experience",
+            link: "#experience",
           },
             {
             title: "Educação formal",
-            link: "/#education",
+            link: "#education",
           },
         ]
       }
         }
 
+    },
+    methods:{
+    //   onItemChanged(event, currentItem, lastActiveItem) {
+    // // here you have access to everything you need regarding that event
     }
 };
 </script>
@@ -93,9 +101,13 @@ export default {
       text-transform: uppercase;
 
       > a {
+
+        > p{
         display: none;
         text-decoration: none;
-
+        transition: all $delay ease-in-out;
+        }
+        
         &:visited, &:link{
         text-decoration: none;
         color: $color1;
@@ -108,8 +120,7 @@ export default {
       }
 
       $dotWidth: 0.6em;
-      
-      &::before {
+      span {
        content: "";
          width: $dotWidth;
         height: $dotWidth;
@@ -122,12 +133,26 @@ export default {
         margin-top: 0.1em;
         transition: all $delay ease-in-out;
       }
-      &:hover::before  , .nav-current{
+
+      .active p{
+          display:inherit;
+          color: $color1;
+        }
+
+      .active span{
+         display:flex;
+         background-color: $color1;  
+      }
+      
+
+      &:hover span{
         background-color: $color1;
         
       }
-      &:hover::before,
-      &:hover {
+      &:hover span,
+      &:hover,
+      &:hover p{
+        display: flex;
         border-width: 0.08em;
         color: $color1;
         border-color: $color1;

@@ -5,7 +5,7 @@
         <span class="typed-text">{{ typeValue }}</span>
         <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
       </h2>
-      <p v-scroll-reveal="{ origin: 'left', delay: 300 }" v-html="String(chooseLanguage(text))"></p>
+      <p v-scroll-reveal="{ origin: 'left', delay: 300, reset:true }" v-html="String(chooseLanguage(text))"></p>
       <a href="https://www.behance.net/gallery/95331407/Juno-Radio-Finalista-do-NASA-Space-Apps-Challenge" target="_blank">
         <div class="info-button button">
         <p>
@@ -15,7 +15,7 @@
         <div class="info-button-inner"></div>
       </div>
       </a>
-       <img v-scroll-reveal="{ origin: 'right', delay: 500 }" src="../assets/juno.png" v-bind:alt="imageAlt" />
+       <img v-scroll-reveal="{ origin: 'right', delay: 500, reset:true }" src="../assets/juno.png" v-bind:alt="imageAlt" />
     </div>
   </section>
 </template>
@@ -118,6 +118,8 @@ export default {
 
   > h2 {
     margin: 1em 0;
+
+    
   }
 
   span.typed-text {
@@ -126,10 +128,10 @@ export default {
 
   span.cursor {
     display: inline-block;
-    margin-left: 3px;
-    width: 4px;
-    background-color: $color1;
+    margin-left: 0.2em;
+    width: 0.5em;
     animation: cursorBlink 1s infinite;
+    height: 0.1em;
   }
 
   span.cursor.typing {

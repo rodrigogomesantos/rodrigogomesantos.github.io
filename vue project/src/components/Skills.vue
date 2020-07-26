@@ -11,7 +11,7 @@
         >{{index}}</li>
       </ul>
       <ul class="skills-itens">
-        <li v-scroll-reveal="{ delay: 500 }"
+        <li v-scroll-reveal
           v-bind:class="{'skills-itens-highlight': validateHighlight(skillsIten)}"
           v-for="(skillsIten, index) in skillsItens"
           :key="index"

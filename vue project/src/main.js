@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueScrollReveal from 'vue-scroll-reveal';
+import VueScrollactive from 'vue-scrollactive';
+
+Vue.use(VueScrollactive);
 
 Vue.config.productionTip = false
 
@@ -10,7 +13,6 @@ Vue.use(VueScrollReveal, {
   scale: 1.1,
   distance: '100px',
   mobile: false,
-  // cleanup: true,
 });
 
 new Vue({

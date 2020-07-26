@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "font-awesome": "^4.7.0",
     "vue": "^2.6.11",
-    "vue-scroll-reveal": "^1.0.11"
+    "vue-scroll-reveal": "^1.0.11",
+    "vue-scrollactive": "^0.9.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
