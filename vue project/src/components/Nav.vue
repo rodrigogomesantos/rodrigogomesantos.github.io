@@ -1,46 +1,52 @@
 <template>
-<scrollactive class="nav scrollactive" active-class="active">
-     <ul class="nav-list button">
-       <li v-for="(nav, index) in chooseLanguage(nav)" :key="index"><a class="scrollactive-item" v-bind:href="nav.link"><span></span><p>{{nav.title}}</p></a></li>       
+  <scrollactive :offset="30" class="nav scrollactive" active-class="active">
+    <ul class="nav-list button">
+      <li>
+        <a href="#intro"><i class="fas fa-arrow-circle-up"></i></a>
+      </li>
+      <li v-for="(nav, index) in chooseLanguage(nav)" :key="index">
+        <a class="scrollactive-item" v-bind:href="nav.link">
+          <span></span>
+          <p>{{nav.title}}</p>
+        </a>
+      </li>
+      <li class="portifolio">
+        <a href="https://www.behance.net/rodrigomes" target="_black">{{chooseLanguage(portifolio)}}</a>
+      </li>
     </ul>
-</scrollactive>
+  </scrollactive>
 </template>
 
 <script>
-import  mixins from "../mixins.js";
+import mixins from "../mixins.js";
 
 export default {
   name: "Nav",
   mixins: [mixins],
-    data(){
-        return{
-            nav: {
+  data() {
+    return {
+      portifolio: {
+        pt: "Portifólio",
+        en: "Portifolio",
+      },
+      nav: {
         pt: [
-           {
-            title: "Início",
-            link: "#intro",
-          },
           {
             title: "Reconhecimentos",
             link: "#recognition ",
           },
-            {
+          {
             title: "Experiências",
             link: "#experience",
           },
-           {
+          {
             title: "Habilidades",
             link: "#skills",
           },
-            {
+          {
             title: "Educação formal",
             link: "#education",
           },
-          {
-            title: "Contato",
-            link: "#contact",
-          },
-       
         ],
 
         en: [
@@ -48,32 +54,31 @@ export default {
             title: "Recognition",
             link: "#recognition ",
           },
-            {
+          {
             title: "Skills",
             link: "#skills",
           },
-            {
+          {
             title: "Education",
             link: "#experience",
           },
-            {
+          {
             title: "Educação formal",
             link: "#education",
           },
-        ]
-      }
-        }
-
-    },
-    methods:{
+        ],
+      },
+    };
+  },
+  methods: {
     //   onItemChanged(event, currentItem, lastActiveItem) {
     // // here you have access to everything you need regarding that event
-    }
+  },
 };
 </script>
 
 <style lang="scss">
-@import "../style.scss";
+@import "@/assets/scss/_variables.scss";
 
 .nav {
   display: block;
@@ -92,6 +97,34 @@ export default {
     list-style: none;
     padding: 0;
 
+    .portifolio {
+
+      writing-mode: vertical-lr;
+      text-orientation: mixed;
+      display: block;
+      margin-left: -0.7em;
+      width: 1rem;
+
+      >a {
+      display: block;
+      color: $color4;
+      border: 0.1em solid $color4;
+      border-radius: 4em;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1em;
+      height: fit-content;
+      padding: 0.8rem 0.4rem;
+      width: 1rem;
+      }
+
+    &:hover{
+      color: $color1 !important;
+      border-color: $color1  !important; 
+    }
+
+    }
+
     > li {
       height: 1.5em;
       color: $color2;
@@ -100,18 +133,26 @@ export default {
       padding: 0.2em;
       text-transform: uppercase;
 
+      &:hover .portifolio{
+      color: $color1;
+      border-color: $color1;
+      }
+
+      &:first-child {
+        margin-left: -0.2em;
+      }
+
       > a {
-
-        > p{
-        display: none;
-        text-decoration: none;
-        transition: all $delay ease-in-out;
+        > p {
+          display: none;
+          text-decoration: none;
+          transition: all $delay ease-in-out;
         }
-        
-        &:visited, &:link{
-        text-decoration: none;
-        color: $color1;
 
+        &:visited,
+        &:link {
+          text-decoration: none;
+          color: $color4;
         }
       }
 
@@ -121,11 +162,11 @@ export default {
 
       $dotWidth: 0.6em;
       span {
-       content: "";
-         width: $dotWidth;
+        content: "";
+        width: $dotWidth;
         height: $dotWidth;
         // border: solid 0.08em $color2;
-        background-color: #CECECE;
+        background-color: #cecece;
         border-radius: 50%;
         display: block;
         float: left;
@@ -134,24 +175,22 @@ export default {
         transition: all $delay ease-in-out;
       }
 
-      .active p{
-          display:inherit;
-          color: $color1;
-        }
-
-      .active span{
-         display:flex;
-         background-color: $color1;  
+      .active p {
+        display: inherit;
+        color: $color1;
       }
-      
 
-      &:hover span{
+      .active span {
+        display: flex;
         background-color: $color1;
-        
+      }
+
+      &:hover span {
+        background-color: $color1;
       }
       &:hover span,
       &:hover,
-      &:hover p{
+      &:hover p {
         display: flex;
         border-width: 0.08em;
         color: $color1;
@@ -198,7 +237,8 @@ export default {
   border-width: 0.12em;
 }
 
-.nav-button:hover a, .nav-current{
+.nav-button:hover a,
+.nav-current {
   color: $color1;
   right: 11%;
   display: block;
@@ -218,5 +258,79 @@ export default {
   color: white;
   transition: none;
 }
+
+@media screen and (max-width: 1220px) {
+  .nav {
+    display: block;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(11px);
+    padding: 0;
+    padding-top: 0.5em;
+
+    .nav-list {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      list-style: none;
+      padding: 0;
+
+      .portifolio {
+
+      writing-mode:horizontal-tb;
+      text-orientation: mixed;
+      display: block;
+      margin-left: -0.7em;
+      width: 1rem;
+
+      >a {
+      display: block;
+      color: $color4;
+      border: 0.1em solid $color4;
+      border-radius: 4em;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1em;
+      height: fit-content;
+      padding: 0.8rem 0.4rem;
+      width: 1rem;
+      }
+      }
+
+
+      > li {
+        font-size: 1.5em;
+
+        &:first-child {
+          margin-left: -0.3em;
+          margin-bottom: 0.3em;
+        }
+        &.active span {
+          display: block;
+          margin: 0 auto;
+        }
+        &.active p {
+          margin-top: 0.2em;
+          display: block;
+        }
+      }
+    }
+
+    > span a {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .nav{
+  display: none;
+}
+}
+
 
 </style>

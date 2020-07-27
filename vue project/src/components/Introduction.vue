@@ -5,17 +5,27 @@
         <span class="typed-text">{{ typeValue }}</span>
         <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
       </h2>
-      <p v-scroll-reveal="{ origin: 'left', delay: 300, reset:true }" v-html="String(chooseLanguage(text))"></p>
-      <a href="https://www.behance.net/gallery/95331407/Juno-Radio-Finalista-do-NASA-Space-Apps-Challenge" target="_blank">
+      <p
+        v-scroll-reveal="{ origin: 'left', delay: 300, reset:true }"
+        v-html="String(chooseLanguage(text))"
+      ></p>
+      <a
+        href="https://www.behance.net/gallery/95331407/Juno-Radio-Finalista-do-NASA-Space-Apps-Challenge"
+        target="_blank"
+      >
         <div class="info-button button">
-        <p>
-          <span>Saiba</span> +
-        </p>
-        <p />
-        <div class="info-button-inner"></div>
-      </div>
+          <p>
+            <span>Saiba</span> +
+          </p>
+          <p />
+          <div class="info-button-inner"></div>
+        </div>
       </a>
-       <img v-scroll-reveal="{ origin: 'right', delay: 500, reset:true }" src="../assets/juno.png" v-bind:alt="imageAlt" />
+      <img
+        v-scroll-reveal="{ origin: 'right', delay: 500, reset:true }"
+        :src="require('../assets/' + image)"
+        v-bind:alt="imageAlt"
+      />
     </div>
   </section>
 </template>
@@ -32,21 +42,34 @@ export default {
         pt: [
           "Designer Gráfico",
           "Designer de Produto",
+          "UX & UI Designer",
           "Maker",
           "Eletricista",
           "Encanador",
           "Pedreiro",
           "Carpinteiro",
           "Encanador",
-          "Programador"
+          "Programador",
         ],
-        en: ["asdasdad"]
+        en: [
+          "Graphic Designer",
+          "Product Designer",
+          "Maker",
+          "Electrician",
+          "Plumber",
+          "Bricklayer",
+          "Carpenter",
+          "Plumber",
+          "Programmer",
+        ],
       },
       text: {
         pt: [
-          "A <b>25 anos</b> atrás, nascia em SP um cara chamado <b>Rodrigo</b>! Que hoje, vivendo em <b>Curitiba</b>, busca soluções criativas para resolver problemas."
+          "A <b>25 anos</b> atrás, nascia em SP um cara chamado <b>Rodrigo</b>! Que hoje, vivendo em <b>Curitiba</b>, busca soluções criativas para resolver problemas.",
         ],
-        en: ["adasdasdada"]
+        en: [
+          "<b> 25 years </b> ago, a guy named <b> Rodrigo </b> was born in SP! Who today, living in <b> Curitiba </b>, seeks creative solutions to solve problems.",
+        ],
       },
       image: "juno.png",
       imageAlt: "Radio Juno em perspectiva",
@@ -58,7 +81,7 @@ export default {
       erasingSpeed: 100,
       newTextDelay: 2000,
       typeArrayIndex: 0,
-      charIndex: 0
+      charIndex: 0,
     };
   },
 
@@ -94,18 +117,19 @@ export default {
         if (this.typeArrayIndex >= typeArray.length) this.typeArrayIndex = 0;
         setTimeout(this.typeText, this.typingSpeed + 1000);
       }
-    }
+    },
   },
 
   created() {
     setTimeout(this.typeText, this.newTextDelay + 200);
-  }
+  },
 };
 </script>
 
 <style lang="scss">
-@import "../style.scss";
-@import "../SCSS/learnMore.scss";
+@import "@/assets/scss/_variables.scss";
+@import "../assets/scss/learnMore.scss";
+
 .intro {
   font-size: 1em;
   padding-top: 8em;
@@ -115,15 +139,13 @@ export default {
     font-size: x-large;
     line-height: 1.5em;
   }
-
+  
   > h2 {
     margin: 1em 0;
-
-    
   }
 
   span.typed-text {
-    color:$color1;
+    color: $color1;
   }
 
   span.cursor {
@@ -138,13 +160,24 @@ export default {
     animation: none;
   }
 
-  .info-button{
+  .info-button {
     float: right;
   }
 
-  > img{
+  > img {
     height: 35em;
     margin-top: -5em;
+  }
+}
+
+#phrase{
+  > h1 {
+        text-transform:none;
+  }
+  >p{
+    text-align:center;
+    font-size: 1.3em;
+    line-height: initial;
   }
 }
 
@@ -157,6 +190,19 @@ export default {
   }
   99% {
     background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .intro {
+    font-size: 1em;
+    padding-top: 0.5em;
+
+    > img {
+      height: auto;
+      margin-top: 1em;
+      width: 100%;
+    }
   }
 }
 </style>

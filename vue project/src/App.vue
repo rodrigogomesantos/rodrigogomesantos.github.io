@@ -1,3 +1,4 @@
+
 <template>
   <div>
     <Nav />
@@ -10,7 +11,6 @@
       <Education />
     </div>
     <Contact />
-    <i class="fab fa-github"></i>
   </div>
 </template>
 
@@ -45,4 +45,5 @@ export default {
 </script>
 
 <style>
+
 </style>

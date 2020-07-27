@@ -31,6 +31,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../style.scss";
-
+@import "@/assets/scss/_variables.scss";
 </style>

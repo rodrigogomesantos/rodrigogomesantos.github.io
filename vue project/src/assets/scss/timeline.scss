@@ -1,0 +1,131 @@
+@import "@/assets/scss/_variables.scss";
+
+.timeline {
+    position: relative;
+    width: 44em;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 1em 0;
+    list-style-type: none;
+  
+    &:before {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      content: ' ';
+      display: block;
+      width: 0.25em;
+      height: 100%;
+      margin-left: -3px;
+      background: $color2;
+      background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, $color2 8%, $color2 92%, rgba(80, 80, 80, 0) 100%);
+      // z-index: 5;
+      transform: translateZ(1px);
+    }
+  
+    >li {
+      padding: 1em 0;
+    }
+  
+    >li:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  
+    .direction-l,
+    .direction-r {
+      position: relative;
+      width: 20.3em;
+  
+      .desc {
+        font-size: 0.77777em;
+        line-height: 1.5em;
+      }
+  
+      >p {
+        font-style: italic;
+      }
+
+      >p span{
+        font-style: normal;
+        font-weight: 400;
+      }
+  
+      >h3 {
+        font-weight: bold;
+      }
+  
+      .time {
+        color: $color1;
+      }
+  
+      >.time:before {
+        $dotWidth: 1em;
+        position: absolute;
+        right: -2.517em;
+        content: ' ';
+        display: block;
+        width: $dotWidth;
+        height: $dotWidth;
+        margin-top: 0.5em;
+        background: $color1;
+        border-radius: 50%;
+        // z-index: 10;
+        box-shadow: 0px 0px 8px 1px $color2, 0px 0px 10px 11px $bg;
+        transform: translateZ(0px);
+      }
+  
+  
+    }
+  
+    .direction-l {
+      float: left;
+      text-align: right;
+    }
+  
+    .direction-r {
+      float: right;
+    }
+  
+    .direction-r .time:before {
+      left: -2.585em;
+    }
+  
+  }
+  
+  
+  
+  
+  /* ================ Timeline Media Queries ================ */
+  
+  @media screen and (max-width: 660px) {
+  
+    .timeline {
+      width: 100%;
+      padding: 4em 0 1em 0;
+  
+      &:before {
+        left: 0.9em;
+      }
+  
+      .direction-l {
+        float: right;
+        text-align: left;
+      }
+  
+      .direction-l,
+      .direction-r {
+        position: relative;
+        left: 2.4em;
+        width: calc(100% - 0.1em);
+      }
+  
+      .direction-l .time:before {
+        right: calc(100% + 1.45em);
+      }
+    }
+  
+  }

@@ -6,6 +6,7 @@ import VueScrollactive from 'vue-scrollactive';
 Vue.use(VueScrollactive);
 
 Vue.config.productionTip = false
+import "@/assets/scss/main.scss";
 
 Vue.use(VueScrollReveal, {
   class: 'v-scroll-reveal', // A CSS class applied to elements with the v-scroll-reveal directive; useful for animation overrides.

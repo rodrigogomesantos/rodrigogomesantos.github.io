@@ -1,0 +1,102 @@
+@import "@/assets/scss/_variables.scss";
+
+.info-button {
+    transform: scale(1);
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    white-space: nowrap;
+}
+  
+.info-button{
+    width: $buttonHeight;
+    height: $buttonHeight;
+    border-radius: 3rem;
+    background: #fff;
+    color: #9999a1;
+    box-shadow: 1px 1px 7px 0 rgba(32,28,50,.20);
+    border: 0.12em solid transparent;
+    transition: all $delay ease-in-out;
+}
+
+.info-button .info-button-inner {
+    top:0.1em;
+    right:0.1em;
+    box-sizing: border-box;
+    margin: auto;
+    width: calc(#{$buttonHeight - 0.1});
+    height: calc(#{$buttonHeight - 0.1});
+    border-style: dashed;
+    border-color: $color2;
+    border-width: 0.1em;
+    border-radius: inherit;
+    animation: rotate 20s linear 500ms infinite normal both;
+    transition: all $delay ease-in-out;
+}
+
+
+.info-button p{
+  font-size: 1.7em;
+  height: 100%;
+  margin:0 auto;
+  line-height: 1.1em;
+  font-style: oblique;
+  font-family: Arial;
+  display:block;
+  position:absolute;
+  transform: rotate(0) scale(1);
+  right: 28%;
+  top: 4%;
+  word-spacing: 0.35em;
+  transition: all $delay ease-in-out; 
+}
+
+.info-button p span{
+   font-size: 0.6em;
+    position: relative;
+    top: -0.29em;
+}
+
+.info-button:hover {
+  width: 5.4em;
+}
+
+.info-button:hover .info-button-inner{
+  width:6.1em;
+  border-style: solid;
+  border-color: $color1;
+  animation: none
+}
+
+.info-button:hover p{
+  word-spacing: normal;
+  color:  $color1;
+  right: 11%;
+}
+
+.info-button:active {
+background-color:$color1;
+transition: none
+}
+
+.info-button:active .info-button-inner{
+  border-color: white;
+  transition: none
+}
+
+.info-button:active p{
+  color:  white;
+  transition: none
+}
+
+@keyframes rotate {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(360deg);
+		}
+}
