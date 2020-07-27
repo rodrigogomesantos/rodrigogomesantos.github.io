@@ -32,7 +32,7 @@ export default {
       educations: {
         pt: [
           {
-            date: "mar. de 2015 - out. de 2016",
+            date: "mar. de 2014 - out. de 2019",
             title: "Bacharelado",
             subtitle:
               "Design, Universidade Tecnológica Federal do Paraná - Curitiba",
@@ -41,7 +41,7 @@ export default {
           },
 
           {
-            date: "mar. de 2018 - out. de 2018",
+            date: "jan. de 2011 - jun. de 2012",
             title: "Técnico",
             subtitle: "Web Design, Etec Guaracy Silveira, São Paulo, BR",
             text:
@@ -51,7 +51,7 @@ export default {
 
         en: [
           {
-            date: "mar. 2015 - Oct. of 2016 ",
+            date: "mar. de 2014 - oct. de 2019",
             title: "Bachelor",
             subtitle:
               "Design, Federal Technological University of Paraná - Curitiba",
@@ -60,7 +60,7 @@ export default {
           },
 
           {
-            date: "mar. 2018 - Oct. 2018 ",
+            date: "jan. de 2011 - jun. de 2012",
             title: "Technician",
             subtitle: "Web Design, Etec Guaracy Silveira, São Paulo, BR",
             text:
