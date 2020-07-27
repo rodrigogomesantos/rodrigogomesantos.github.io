@@ -49,6 +49,7 @@ export default {
   metaInfo() {
     return {
       meta: [
+        {title: 'Rodrigo Gomes',},
           // Twitter Card
           {name: 'twitter:card', content: 'summary'},
           {name: 'twitter:title', content: 'Rodrigo Gomes'},
