@@ -26,6 +26,9 @@ import Contact from "./components/Contact";
 
 // import "font-awesome/css/font-awesome.css"
 
+
+let ROOT_PATH = 'https://rodrigogomesantos.github.io'
+
 export default {
   name: "app",
   components: {
@@ -39,8 +42,29 @@ export default {
     Recognition,
   },
   data() {
-    return {};
+    return {
+      logo: ROOT_PATH + require('./assets/perfil.png')
+    };
   },
+  metaInfo() {
+    return {
+      meta: [
+          // Twitter Card
+          {name: 'twitter:card', content: 'summary'},
+          {name: 'twitter:title', content: 'Rodrigo Gomes'},
+          {name: 'twitter:description', content: 'Um pouco mais da minha trajetória, habilidades e experiências'},
+          // image must be an absolute path
+          {name: 'twitter:image', content: this.logo},
+          // Facebook OpenGraph
+          {property: 'og:title', content: 'Rodrigo Gomes'},
+          {property: 'og:site_name', content: 'Rodrigo Gomes'},
+          {property: 'og:type', content: 'website'},
+          {property: 'og:image', content:  this.logo},
+          {property: 'og:description', content: 'Um pouco mais da minha trajetória, habilidades e experiências'}
+      ]
+    }
+  }
+
 };
 </script>
 
