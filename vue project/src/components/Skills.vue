@@ -45,7 +45,16 @@ export default {
           Maker: ["Impressora 3D", "CAD/CAM", "Marcenaria", "Eltronica"]
         },
 
-        en: []
+        en: {
+          Web: ["CSS / SCSS", "HTML", "JavaScript"],
+           "Product design": [
+             "Fusion 360",
+             "Autocad",
+             "Plastic injection",
+             "Sheet metal",
+             "Keyshot"
+           ],
+           Maker: ["3D Printer", "CAD / CAM", "Joinery", "Eltronica"]}
       },
       skillsItens: [],
       highlightedItens: []

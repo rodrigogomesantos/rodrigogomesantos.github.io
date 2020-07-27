@@ -54,17 +54,17 @@ export default {
             title: "Recognition",
             link: "#recognition ",
           },
+           {
+            title: "Experience",
+            link: "#education",
+          },
           {
             title: "Skills",
             link: "#skills",
           },
           {
-            title: "Education",
+            title: "Formal Education",
             link: "#experience",
-          },
-          {
-            title: "Educação formal",
-            link: "#education",
           },
         ],
       },

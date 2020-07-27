@@ -51,7 +51,32 @@ export default {
         },
 
       ],
-        en: [],
+        en: [
+          {
+          image: "driftUtf.jpg",
+          imageAlt: "the Shi Drift Trike in the center of the image at an exhibition at UTFPR University",
+          title: "2016 - UTFPR Makes Design",
+          project: "Shi Drift Trike",
+          projectLink: "https://www.behance.net/gallery/45138823/Shi-Drift-Trike",
+          placement: "Honorable Mention",
+        },
+        {
+          image: "driftMon.jpg",
+          imageAlt: "the Shi Drift Trike in the center of the image in an exhibition at the Oscar Nyemaier Museum",
+          title: "2016 - International Design Award Object: Brazil",
+          project: "Shi Drift Trike",
+          projectLink: "https://www.behance.net/gallery/45138823/Shi-Drift-Trike",
+          placement: "Bronze",
+        },
+        {
+          image: "bomDesign.jpg",
+          imageAlt: "Me and my team holding the trophy and receiving the prize in a pauco",
+          title: "2019 - Bom Design Award",
+          project: "Retrofit CNC lathe",
+          projectLink: false,
+          placement: "Honorable Mention",
+        },
+        ],
         },
     };
   },
