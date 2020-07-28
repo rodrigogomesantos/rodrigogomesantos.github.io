@@ -2,7 +2,9 @@
   <scrollactive :offset="30" class="nav scrollactive" active-class="active">
     <ul class="nav-list button">
       <li>
-        <a href="#intro"><i class="fas fa-arrow-circle-up"></i></a>
+        <a href="#intro">
+          <i class="fas fa-arrow-circle-up"></i>
+        </a>
       </li>
       <li v-for="(nav, index) in chooseLanguage(nav)" :key="index">
         <a class="scrollactive-item" v-bind:href="nav.link">
@@ -54,9 +56,9 @@ export default {
             title: "Recognition",
             link: "#recognition ",
           },
-           {
+          {
             title: "Experience",
-            link: "#education",
+            link: "#experience",
           },
           {
             title: "Skills",
@@ -64,7 +66,7 @@ export default {
           },
           {
             title: "Formal Education",
-            link: "#experience",
+            link: "#education",
           },
         ],
       },
@@ -98,31 +100,29 @@ export default {
     padding: 0;
 
     .portifolio {
-
       writing-mode: vertical-lr;
       text-orientation: mixed;
       display: block;
       margin-left: -0.7em;
       width: 1rem;
 
-      >a {
-      display: block;
-      color: $color4;
-      border: 0.1em solid $color4;
-      border-radius: 4em;
-      text-align: center;
-      text-transform: capitalize;
-      font-size: 1em;
-      height: fit-content;
-      padding: 0.8rem 0.4rem;
-      width: 1rem;
+      > a {
+        display: block;
+        color: $color4;
+        border: 0.1em solid $color4;
+        border-radius: 4em;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1em;
+        height: fit-content;
+        padding: 0.8rem 0.4rem;
+        width: 1rem;
+
+        &:hover {
+          color: $color1 !important;
+          border-color: $color1 !important;
+        }
       }
-
-    &:hover{
-      color: $color1 !important;
-      border-color: $color1  !important; 
-    }
-
     }
 
     > li {
@@ -133,9 +133,9 @@ export default {
       padding: 0.2em;
       text-transform: uppercase;
 
-      &:hover .portifolio{
-      color: $color1;
-      border-color: $color1;
+      &:hover .portifolio {
+        color: $color1;
+        border-color: $color1;
       }
 
       &:first-child {
@@ -282,27 +282,25 @@ export default {
       padding: 0;
 
       .portifolio {
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        display: block;
+        margin-left: -0.7em;
+        width: 1rem;
 
-      writing-mode:horizontal-tb;
-      text-orientation: mixed;
-      display: block;
-      margin-left: -0.7em;
-      width: 1rem;
-
-      >a {
-      display: block;
-      color: $color4;
-      border: 0.1em solid $color4;
-      border-radius: 4em;
-      text-align: center;
-      text-transform: capitalize;
-      font-size: 1em;
-      height: fit-content;
-      padding: 0.8rem 0.4rem;
-      width: 1rem;
+        > a {
+          display: block;
+          color: $color4;
+          border: 0.1em solid $color4;
+          border-radius: 4em;
+          text-align: center;
+          text-transform: capitalize;
+          font-size: 1em;
+          height: fit-content;
+          padding: 0.8rem 0.4rem;
+          width: 1rem;
+        }
       }
-      }
-
 
       > li {
         font-size: 1.5em;
@@ -327,10 +325,8 @@ export default {
       justify-content: center;
     }
   }
-  .nav{
-  display: none;
+  .nav {
+    display: none;
+  }
 }
-}
-
-
 </style>

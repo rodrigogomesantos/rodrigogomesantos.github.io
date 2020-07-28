@@ -73,9 +73,9 @@ $fa-font-path: "~@fortawesome/fontawesome-free-webfonts/webfonts";
   background-repeat: no-repeat;
   padding: 0;
   text-align: center;
-  min-height: 30vh;
-  margin-top: -7em;
-  padding-top: 7em;
+  min-height: 21vh;
+  margin-top: -10em;
+  padding-top: 13em;
 
   .social {
     display: flex;

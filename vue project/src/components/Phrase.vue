@@ -1,6 +1,6 @@
 <template>
-<section v-scroll-reveal="{ reset: true}"  id="phrase">
-<h1 v-scroll-reveal><i>{{chooseLanguage(phrase)}}</i></h1>
+<section>
+<h1><i>{{chooseLanguage(phrase)}}</i></h1>
 <p>{{chooseLanguage(text)}}</p>
 </section>
 </template>
@@ -14,8 +14,8 @@ export default {
   data() {
     return {
       phrase:{
-        pt: '"Philosophical impact phrase"',
-        en: 'adasd',
+        pt: '"Frase pra chamar sua ateção"',
+        en: 'Philosophical impact phrase',
         },
         text:{
         pt: 'Sou movido por desafios, sempre estou envolvido em projetos multidisciplinares que ajudam a alimentar a minha maior paixão, aprender! Fazendo com que consiga resolver problemas de forma ágil e criativa',

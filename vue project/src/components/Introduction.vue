@@ -6,7 +6,7 @@
         <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
       </h2>
       <p
-        v-scroll-reveal="{ origin: 'left', delay: 300, reset:true }"
+        
         v-html="String(chooseLanguage(text))"
       ></p>
       <a
@@ -22,10 +22,10 @@
         </div>
       </a>
       <img
-        v-scroll-reveal="{ origin: 'right', delay: 500, reset:true }"
+       
         :src="require('../assets/' + image)"
         v-bind:alt="imageAlt"
-      />
+      />  
     </div>
   </section>
 </template>
@@ -139,7 +139,7 @@ export default {
     font-size: x-large;
     line-height: 1.5em;
   }
-  
+
   > h2 {
     margin: 1em 0;
   }
@@ -170,12 +170,12 @@ export default {
   }
 }
 
-#phrase{
+#phrase {
   > h1 {
-        text-transform:none;
+    text-transform: none;
   }
-  >p{
-    text-align:center;
+  > p {
+    text-align: center;
     font-size: 1.3em;
     line-height: initial;
   }
@@ -193,6 +193,19 @@ export default {
   }
 }
 
+@media screen and (max-width: 1040px) {
+  .intro {
+    > img {
+      height: auto;
+      margin-top: 1em;
+      width: 100%;
+    }
+    .info-button {
+    margin-right: 7em;
+  }
+  }
+}
+
 @media screen and (max-width: 660px) {
   .intro {
     font-size: 1em;
@@ -203,6 +216,10 @@ export default {
       margin-top: 1em;
       width: 100%;
     }
+
+    .info-button {
+    margin-right: 0;
+  }
   }
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <section id="skills">
-    <h1 v-scroll-reveal>{{chooseLanguage(titles)}}</h1>
+    <h1>{{chooseLanguage(titles)}}</h1>
     <div class="skills">
-      <ul v-scroll-reveal="{ delay: 250 }" class="skills-buttons">
+      <ul class="skills-buttons">
         <li
           @mouseover="populateHighlightedItens(skill)"
           @mouseleave="highlightedItens = []"
@@ -11,7 +11,7 @@
         >{{index}}</li>
       </ul>
       <ul class="skills-itens">
-        <li v-scroll-reveal
+        <li 
           v-bind:class="{'skills-itens-highlight': validateHighlight(skillsIten)}"
           v-for="(skillsIten, index) in skillsItens"
           :key="index"
@@ -35,6 +35,7 @@ export default {
       skills: {
         pt: {
           Web: ["CSS/SCSS", "HTML", "JavaScript"],
+          Maker: ["Impressora 3D", "CAD/CAM", "Marcenaria", "Eltronica"],
           "Design de Produto": [
             "Fusion 360",
             "Autocad",
@@ -42,7 +43,6 @@ export default {
             "Sheet metal",
             "Keyshot"
           ],
-          Maker: ["Impressora 3D", "CAD/CAM", "Marcenaria", "Eltronica"]
         },
 
         en: {

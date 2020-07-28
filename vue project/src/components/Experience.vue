@@ -1,8 +1,8 @@
 <template>
-<section v-scroll-reveal="{ reset: true}"  id="experience">
-<h1 v-scroll-reveal="{ reset: true}">{{chooseLanguage(titles)}}</h1>
-  <ul v-scroll-reveal="{ reset: true}" class="timeline">
-    <li v-scroll-reveal="{ reset: true}" v-for="(experience, index) in chooseLanguage(experiences) " :key="index">
+<section id="experience">
+<h1>{{chooseLanguage(titles)}}</h1>
+  <ul class="timeline">
+    <li v-for="(experience, index) in chooseLanguage(experiences) " :key="index">
       <div class="initial" v-bind:class="chooseSide(index)">
         <h5 class="time">{{experience.date}}</h5>
         <h3>{{experience.title}}</h3>
