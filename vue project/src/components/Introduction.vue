@@ -141,7 +141,7 @@ export default {
   }
 
   > h2 {
-    margin: 1em 0;
+    margin: 3em 0;
   }
 
   span.typed-text {
