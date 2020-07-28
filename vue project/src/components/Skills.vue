@@ -11,7 +11,7 @@
         >{{index}}</li>
       </ul>
       <ul class="skills-itens">
-        <li 
+        <li
           v-bind:class="{'skills-itens-highlight': validateHighlight(skillsIten)}"
           v-for="(skillsIten, index) in skillsItens"
           :key="index"
@@ -30,7 +30,7 @@ export default {
     return {
       titles: {
         pt: "Habilidades",
-        en: "Skills"
+        en: "Skills",
       },
       skills: {
         pt: {
@@ -41,31 +41,33 @@ export default {
             "Autocad",
             "Injeção Plastica",
             "Sheet metal",
-            "Keyshot"
+            "Keyshot",
           ],
         },
 
         en: {
           Web: ["CSS / SCSS", "HTML", "JavaScript"],
-           Maker: ["3D Printer", "CAD / CAM", "Joinery", "Eltronica"],
-            "Product design": [
-             "Fusion 360",
-             "Autocad",
-             "Plastic injection",
-             "Sheet metal",
-             "Keyshot"
-           ],
-           }
+          Maker: ["3D Printer", "CAD / CAM", "Joinery", "Eltronica"],
+          "Product design": [
+            "Fusion 360",
+            "Autocad",
+            "Plastic injection",
+            "Sheet metal",
+            "Keyshot",
+          ],
+        },
       },
       skillsItens: [],
-      highlightedItens: []
+      highlightedItens: [],
     };
   },
   created() {
     let skillCategory = this.chooseLanguage(this.skills);
-    Object.keys(skillCategory).forEach(key => {
-      skillCategory[key].forEach(skill => {
-        this.skillsItens.push(skill);
+    Object.keys(skillCategory).forEach((key) => {
+      skillCategory[key].forEach((skill) => {
+        if (!this.skillsItens.includes(skill)) {
+          this.skillsItens.push(skill);
+        }
         this.shuffle(this.skillsItens);
       });
     });
@@ -77,8 +79,8 @@ export default {
     },
 
     validateHighlight(skillsIten) {
-      console.log(!!this.highlightedItens.find(skill => skill == skillsIten));
-      return !!this.highlightedItens.find(skill => skill == skillsIten);
+      console.log(!!this.highlightedItens.find((skill) => skill == skillsIten));
+      return !!this.highlightedItens.find((skill) => skill == skillsIten);
     },
 
     chooseSide(number) {
@@ -88,8 +90,8 @@ export default {
 
     shuffle(array) {
       array.sort(() => Math.random() - 0.5);
-    }
-  }
+    },
+  },
 };
 </script>
 
