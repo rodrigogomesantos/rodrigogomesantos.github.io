@@ -73,3 +73,12 @@ section{
   color: $bg;
   background: $color1;
 }
+
+
+@media screen and (max-width: 660px) {
+  
+.container {
+  padding: 0 1em 0 1em;
+}
+
+}

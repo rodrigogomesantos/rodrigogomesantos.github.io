@@ -111,9 +111,11 @@
     .timeline {
       width: 100%;
       padding: 4em 0 1em 0;
+      margin-left: 1em;
   
       &:before {
-        left: -1.5em;
+        left: -1.2em;
+        
       }
   
       .direction-l {
@@ -132,6 +134,9 @@
   
       .direction-l .time:before, .direction-r .time:before {
         left: 0;
+        width: 0.8em;
+        height: 0.8em;
+        margin-left: -1.4em;
       }
     }
   

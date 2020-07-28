@@ -130,7 +130,10 @@ export default {
 }
 
 @media screen and (max-width: 660px) {
-  
+
+h1{
+  font-size: 1.7em !important;
+}
 .rec_container .rec_card {
     width: 100%;
     margin-top: 4em;
