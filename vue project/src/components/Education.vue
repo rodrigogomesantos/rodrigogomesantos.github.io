@@ -35,7 +35,7 @@ export default {
             date: "mar. de 2014 - out. de 2019",
             title: "Bacharelado",
             subtitle:
-              "Design, Universidade Tecnológica Federal do Paraná - Curitiba",
+              "Design, Universidade Tecnológica Federal do Paraná, Curitiba, BR",
             text:
               "Foi fora da sala de aula que realmente eu entendi a lógica do desgin. Participando de várias organizações como; Centro Acadêmico, Semana Acadêmica, SAE Baja e co-criação do Abrigo Haker Space."
           },
@@ -54,7 +54,7 @@ export default {
             date: "mar. de 2014 - oct. de 2019",
             title: "Bachelor",
             subtitle:
-              "Design, Federal Technological University of Paraná - Curitiba",
+              "Design, Federal Technological University of Paraná, Curitiba, BR",
             text:
               "It was outside the classroom that I really understood the logic of design. Participating in various organizations like; Academic Center, Academic Week, SAE Baja and co-creation of Abrigo Haker Space. "
           },
@@ -64,7 +64,7 @@ export default {
             title: "Technician",
             subtitle: "Web Design, Etec Guaracy Silveira, São Paulo, BR",
             text:
-              "This is where I discovered my passion for design, learning a little about programming and what I now know as UX / UI."
+              "This is where I discovered my passion for design, learning a little about programming and what I now know as UX/UI."
           }
         ]
       }

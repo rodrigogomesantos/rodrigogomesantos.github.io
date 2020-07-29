@@ -1,5 +1,5 @@
 <template>
-<section>
+<section id="phrase">
 <h1><i>{{chooseLanguage(phrase)}}</i></h1>
 <p>{{chooseLanguage(text)}}</p>
 </section>
@@ -14,12 +14,12 @@ export default {
   data() {
     return {
       phrase:{
-        pt: '"Frase pra chamar sua ateção"',
-        en: 'Philosophical impact phrase',
+        pt: '"Nem tudo o que enxergamos é obvio!"',
+        en: '"Not everything we see is obvious!"',
         },
         text:{
-        pt: 'Sou movido por desafios, sempre estou envolvido em projetos multidisciplinares que ajudam a alimentar a minha maior paixão, aprender! Fazendo com que consiga resolver problemas de forma ágil e criativa',
-        en: 'I am driven by challenges, I am always involved in multidisciplinary projects that help to fuel my greatest passion, to learn! Making it possible to solve problems in an agile and creative way',
+        pt: 'Trabalhar em projetos diversificados , ao lado de pessoas totalmente diferentes na personalidade ou área de atuação, me fez enchegar o mundo com outras perspectivas, me auxiliando a cada dia mais na resolução de problemas independente do seu gênero.',
+        en: 'Working on diverse projects, alongside totally different people in their personality or area of activity, made me fill the world with other perspectives, helping me more and more in solving problems regardless of their type.',
         },
     };
   },
@@ -32,4 +32,9 @@ export default {
 
 <style lang="scss">
 @import "@/assets/scss/_variables.scss";
+
+#phrase{
+text-transform: inherit;
+}
+
 </style>

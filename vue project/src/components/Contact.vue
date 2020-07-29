@@ -1,6 +1,6 @@
 <template>
   <section id="contact" class="contact">
-    <p>{{chooseLanguage(title)}}</p>
+    <p v-html="chooseLanguage(title)"></p>
     <div class="social">
       <a
         v-for="(icon, index) in icons"
@@ -22,8 +22,8 @@ export default {
   data() {
     return {
       title: {
-        pt: "Obrigado pela visita e bora bater um papo!",
-        en: "Thanks for visiting and let's chat!",
+        pt: "<b>Obrigado pela visita.</b><br><span>Quer conhecer mais projetos meus?<br>Bora bater um papo!</span>",
+        en: "<b>Thanks for coming.</b><br><span>Do you wanna know more about my projects? Let's chat.</span>",
       },
       icons: [
         {
@@ -73,9 +73,17 @@ $fa-font-path: "~@fortawesome/fontawesome-free-webfonts/webfonts";
   background-repeat: no-repeat;
   padding: 0;
   text-align: center;
-  min-height: 21vh;
+  min-height: 30vh;
   margin-top: -10em;
   padding-top: 13em;
+  
+  p span{
+    margin: 4em 0 2em 0;
+    /* padding: 6em; */
+    display: block;
+    font-size: 1rem;
+    
+  }
 
   .social {
     display: flex;
@@ -91,7 +99,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free-webfonts/webfonts";
     > a {
       top: 1em;
       padding: 0.3em;
-      font-size: 1.5em;
+      font-size: 1.6em;
       transition: all $delay ease-in-out;
 
       &:visited,

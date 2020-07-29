@@ -2,7 +2,7 @@
   <scrollactive :offset="30" class="nav scrollactive" active-class="active">
     <ul class="nav-list button">
       <li>
-        <a href="#intro">
+        <a href="#intro" class="scrollactive-item">
           <i class="fas fa-arrow-circle-up"></i>
         </a>
       </li>
@@ -133,9 +133,14 @@ export default {
       padding: 0.2em;
       text-transform: uppercase;
 
+      a:first-child:hover{
+        color: $color1;
+      }
+
       &:hover .portifolio {
         color: $color1;
         border-color: $color1;
+        
       }
 
       &:first-child {
@@ -144,7 +149,8 @@ export default {
 
       > a {
         > p {
-          display: none;
+          display: inherit;
+          opacity: 0;
           text-decoration: none;
           transition: all $delay ease-in-out;
         }
@@ -153,6 +159,7 @@ export default {
         &:link {
           text-decoration: none;
           color: $color4;
+          transition: all $delay ease-in-out;
         }
       }
 
@@ -178,6 +185,13 @@ export default {
       .active p {
         display: inherit;
         color: $color1;
+        opacity: 1;
+      }
+
+      .active i { //home button
+        display: inherit;
+        opacity: 0;
+        transition: 1s $delay ease-in-out;
       }
 
       .active span {
@@ -187,10 +201,12 @@ export default {
 
       &:hover span {
         background-color: $color1;
+        opacity: 1;
       }
       &:hover span,
       &:hover,
       &:hover p {
+        opacity: 1;
         display: flex;
         border-width: 0.08em;
         color: $color1;

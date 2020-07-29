@@ -5,10 +5,7 @@
         <span class="typed-text">{{ typeValue }}</span>
         <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
       </h2>
-      <p
-        
-        v-html="String(chooseLanguage(text))"
-      ></p>
+      <p v-html="String(chooseLanguage(text))"></p>
       <a
         href="https://www.behance.net/gallery/95331407/Juno-Radio-Finalista-do-NASA-Space-Apps-Challenge"
         target="_blank"
@@ -21,11 +18,7 @@
           <div class="info-button-inner"></div>
         </div>
       </a>
-      <img
-       
-        :src="require('../assets/' + image)"
-        v-bind:alt="imageAlt"
-      />  
+      <img :src="require('../assets/' + image)" v-bind:alt="imageAlt" />
     </div>
   </section>
 </template>
@@ -44,31 +37,21 @@ export default {
           "Designer de Produto",
           "UX & UI Designer",
           "Maker",
-          "Eletricista",
-          "Encanador",
-          "Pedreiro",
-          "Carpinteiro",
-          "Encanador",
-          "Programador",
         ],
         en: [
           "Graphic Designer",
           "Product Designer",
+          "UX & UI Designer",
           "Maker",
-          "Electrician",
-          "Plumber",
-          "Bricklayer",
-          "Carpenter",
-          "Plumber",
-          "Programmer",
         ],
       },
       text: {
         pt: [
-          "A <b>25 anos</b> atrás, nascia em SP um cara chamado <b>Rodrigo</b>! Que hoje, vivendo em <b>Curitiba</b>, busca soluções criativas para resolver problemas.",
+          // A <b>25 anos</b> atrás, nascia em SP um cara chamado <b>Rodrigo</b>! Que hoje, vivendo em <b>Curitiba</b>, busca soluções criativas para resolver problemas.
+          "Olá, meu nome é <b>Rodrigo Gomes</b>! Movido por desafios, estou o tempo todo envolvido em projetos multidisciplinares do produto digital ao fisico",
         ],
         en: [
-          "<b> 25 years </b> ago, a guy named <b> Rodrigo </b> was born in SP! Who today, living in <b> Curitiba </b>, seeks creative solutions to solve problems.",
+          "Hello, my name is <b> Rodrigo Gomes </b>! Driven by challenges, I am constantly involved in multidisciplinary projects from digital to physical products ",
         ],
       },
       image: "juno.png",
@@ -132,7 +115,7 @@ export default {
 
 .intro {
   font-size: 1em;
-  padding-top: 8em;
+  padding-top: 4em;
 
   > p {
     max-width: 20em;
@@ -141,7 +124,7 @@ export default {
   }
 
   > h2 {
-    margin: 3em 0;
+    margin: 1em 0;
   }
 
   span.typed-text {
@@ -201,8 +184,8 @@ export default {
       width: 100%;
     }
     .info-button {
-    margin-right: 7em;
-  }
+      margin-right: 7em;
+    }
   }
 }
 
@@ -218,8 +201,8 @@ export default {
     }
 
     .info-button {
-    margin-right: 0;
-  }
+      margin-right: 0;
+    }
   }
 }
 </style>

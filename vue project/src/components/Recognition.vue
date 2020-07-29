@@ -136,7 +136,11 @@ h1{
 }
 .rec_container .rec_card {
     width: 100%;
-    margin-top: 4em;
+    margin-top: 3em;
+}
+
+.rec_container .rec_card:first-child{
+  margin-top: 1em;
 }
 
 }
