@@ -99,7 +99,7 @@ export default {
             title: "Freelancer",
             subtitle: "Rental Guys and Others - Curitiba, PR",
             text:
-              "Making freela has always been a way to save some extra money, but as a result I gained a profound learning experience, from the busines part to the technical part. Working as a Husband for Rent, automation of a shooting range, website construction, graphic designer."
+              "Making freelance jobs has always been a way to save some extra money, but as a result I gained a profound learning experience, from the busines part to the technical part. Working as a Husband for Rent, automation of a shooting range, website construction, graphic designer."
           },
           {
             date: "Mar. 2015 - Oct. 2016",

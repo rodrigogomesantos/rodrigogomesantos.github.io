@@ -48,10 +48,10 @@ export default {
       text: {
         pt: [
           // A <b>25 anos</b> atrás, nascia em SP um cara chamado <b>Rodrigo</b>! Que hoje, vivendo em <b>Curitiba</b>, busca soluções criativas para resolver problemas.
-          "Olá, meu nome é <b>Rodrigo Gomes</b>! Movido por desafios, estou o tempo todo envolvido em projetos multidisciplinares do produto digital ao fisico",
+          "Olá, meu nome é <b>Rodrigo Gomes</b>! Movido por desafios, estou o tempo todo envolvido em projetos multidisciplinares de produtos digitais aos fisicos.",
         ],
         en: [
-          "Hello, my name is <b> Rodrigo Gomes </b>! Driven by challenges, I am constantly involved in multidisciplinary projects from digital to physical products ",
+          "Hello, my name is <b> Rodrigo Gomes </b>! Driven by challenges, I am constantly involved in multidisciplinary projects from digital to physical products.",
         ],
       },
       image: "juno.png",
@@ -118,7 +118,7 @@ export default {
   padding-top: 4em;
 
   > p {
-    max-width: 20em;
+    max-width: 21em;
     font-size: x-large;
     line-height: 1.5em;
   }

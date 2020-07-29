@@ -37,7 +37,7 @@ export default {
             subtitle:
               "Design, Universidade Tecnológica Federal do Paraná, Curitiba, BR",
             text:
-              "Foi fora da sala de aula que realmente eu entendi a lógica do desgin. Participando de várias organizações como; Centro Acadêmico, Semana Acadêmica, SAE Baja e co-criação do Abrigo Haker Space."
+              "Foi fora da sala de aula que realmente eu entendi a lógica do desgin. Participando de várias organizações como; Centro Acadêmico, Semana Acadêmica, SAE Baja e co-criação do Abrigo Hacker Space."
           },
 
           {
@@ -56,7 +56,7 @@ export default {
             subtitle:
               "Design, Federal Technological University of Paraná, Curitiba, BR",
             text:
-              "It was outside the classroom that I really understood the logic of design. Participating in various organizations like; Academic Center, Academic Week, SAE Baja and co-creation of Abrigo Haker Space. "
+              "It was outside the classroom that I really understood the logic of design. Participating in various organizations like; Academic Center, Academic Week, SAE Baja and co-creation of Abrigo Hacker Space. "
           },
 
           {
