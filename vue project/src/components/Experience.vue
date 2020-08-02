@@ -52,14 +52,14 @@ export default {
             subtitle:
               "Comissão Organizadora do N Design 2017, CONDe - Curitiba, PR",
             text:
-              'Trabalhar na organização  de um evento que dura uma semana para 1200 pessoas, foi sem duvidas, incrível. <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ZNvER9v1dpSasDKHDf1PZulWuUBmgB6XqkDqN31oD3I/edit#gid=1048042397">Saiba mais<a/> '
+              'Trabalhar na organização de um evento que dura uma semana para 1200 pessoas, foi sem dúvidas, incrível. <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ZNvER9v1dpSasDKHDf1PZulWuUBmgB6XqkDqN31oD3I/edit#gid=1048042397">Saiba mais<a/> '
           },
           {
             date: "out. de 2016 - agora",
             title: "Freelancer",
             subtitle: "Rapazes de Aluguel e outros - Curitiba, PR",
             text:
-              "Fazer freela sempre foi um jeito de juntar um dinheiro extra, mas como conseguencia ganhei um apredizado encrivel, desde a parte do busines até a parte técnica.  Trabalhando como “Marido de Aluguel”, automação de um estande de tiro, construção de site, designer gráfico."
+              "Fazer freela sempre foi um jeito de juntar um dinheiro extra, mas como consequência ganhei um aprendizado incrível, desde a parte do business até a parte técnica. Trabalhando como “Marido de Aluguel”, automação de um estande de tiro, construção de site, designer gráfico."
           },
           {
             date: "mar. de 2015 - out. de 2016",
