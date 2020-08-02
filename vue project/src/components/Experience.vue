@@ -59,7 +59,7 @@ export default {
             title: "Freelancer",
             subtitle: "Rapazes de Aluguel e outros - Curitiba, PR",
             text:
-              "Fazer freela sempre foi um jeito de juntar um dinheiro extra, mas como consequência ganhei um aprendizado incrível, desde a parte do business até a parte técnica. Trabalhando como “Marido de Aluguel”, automação de um estande de tiro, construção de site, designer gráfico."
+              "Fazer freela sempre foi um jeito de juntar um dinheiro extra, mas como consequência ganhei um aprendizado incrível, desde a parte do business até a parte técnica. Trabalhando como “Marido de Aluguel”, automação de um estande de tiro, construção de site e designer gráfico."
           },
           {
             date: "mar. de 2015 - out. de 2016",
