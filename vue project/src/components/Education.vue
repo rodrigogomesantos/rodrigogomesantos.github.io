@@ -37,7 +37,7 @@ export default {
             subtitle:
               "Design, Universidade Tecnológica Federal do Paraná, Curitiba, BR",
             text:
-              "Foi fora da sala de aula que realmente eu entendi a lógica do desgin. Participando de várias organizações como; Centro Acadêmico, Semana Acadêmica, SAE Baja e co-criação do Abrigo Hacker Space."
+              "Entendi a lógica do design, de fato, fora da sala de aula. Participando de várias organizações como o centro acadêmico, semana acadêmica, SAE Baja e co-criação do Abrigo Maker Space."
           },
 
           {

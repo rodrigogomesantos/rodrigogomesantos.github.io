@@ -37,14 +37,14 @@ export default {
             title: "Designer de Produto",
             subtitle: "Orakolo Técnologia - Curitiba, PR",
             text:
-              "Realização de beta testes, pesquisar tendências em tecnologia até o desenvolvimento de novos produtos. Sejam eles usando sheetmetal, injeção plástica... Partindo da ideia, desenvolvimento de mockups, protótipos ou réplicas."
+              "Realização de Testes Beta, pesquisa de tendências em tecnologia e desenvolvimento de novos produtos - sejam eles em sheetmetal, injeção plástica, dentre outros materiais, partindo de ideias, desenvolvimento de mockups, protótipos ou réplicas."
           },
           {
             date: "mar. de 2018 - out. de 2018",
             title: "Estágio em Design",
             subtitle: "Schattdecor - São José dos Pinhais, PR",
             text:
-              "Uma super experiência em uma empresa multinacional que é líder global em seu seguimento, me fez entender um pouco mais sobre tendências, tendo como desafio projetar para o futuro, desenvolvendo mobiliário e peças gráficas."
+              "Experiência multinacional líder global no próprio seguimento. Aprendizado sobre processos de tendências, tendo como desafio projetar para o futuro, desenvolvendo mobiliário e peças gráficas."
           },
           {
             date: "mai. de 2017 - jan. de 2018",
@@ -52,21 +52,21 @@ export default {
             subtitle:
               "Comissão Organizadora do N Design 2017, CONDe - Curitiba, PR",
             text:
-              'Trabalhar na organização de um evento que dura uma semana para 1200 pessoas, foi sem dúvidas, incrível. <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ZNvER9v1dpSasDKHDf1PZulWuUBmgB6XqkDqN31oD3I/edit#gid=1048042397">Saiba mais<a/> '
+              'Trabalhar na organização de um evento que dura uma semana para 1200 pessoas, foi sem dúvidas, uma experiência de muito aprendizado. <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ZNvER9v1dpSasDKHDf1PZulWuUBmgB6XqkDqN31oD3I/edit#gid=1048042397">Saiba mais<a/> '
           },
           {
             date: "out. de 2016 - agora",
             title: "Freelancer",
             subtitle: "Rapazes de Aluguel e outros - Curitiba, PR",
             text:
-              "Fazer freela sempre foi um jeito de juntar um dinheiro extra, mas como consequência ganhei um aprendizado incrível, desde a parte do business até a parte técnica. Trabalhando como “Marido de Aluguel”, automação de um estande de tiro, construção de site e designer gráfico."
+              "Fazer freelas sempre foi um jeito de juntar uma graninha extra. Essas experiências me proporcionaram aprendizados incríveis, da parte de negócios à parte técnica. Trabalhando em diversos setores, como na automação de um estande de tiro, construção de site e design gráfico."
           },
           {
             date: "mar. de 2015 - out. de 2016",
             title: "Estágio em Design",
             subtitle: "Departamento de Extensão da UTFPR - Curitiba, PR",
             text:
-              "Tive a oportunidade de trabalhar com uma ex-empresária e atual professora, me ensinou muito sobre design! Trabalhando em peças gráficas, produtos, construção de sites e edição de vídeo."
+              "Tive a oportunidade de trabalhar com uma ex-empresária e atual professora, que me ensinou muito sobre design. Com ela, pude trabalhar em peças gráficas, produtos, construção de sites e edição de vídeo."
           },
           
         ],
