@@ -48,7 +48,7 @@ export default {
       text: {
         pt: [
           // A <b>25 anos</b> atrás, nascia em SP um cara chamado <b>Rodrigo</b>! Que hoje, vivendo em <b>Curitiba</b>, busca soluções criativas para resolver problemas.
-          "Trabalhar em projetos diversificados, ao lado de pessoas totalmente diferentes - seja em personalidade ou área de atuação, me permitiu ver o mundo sob outras perspectivas, o que me auxilia na resolução de problemas em seus diversos aspectos.",
+          "Olá, meu nome é <b>Rodrigo Gomes</b>! Movido por desafios, estou o tempo todo envolvido em projetos multidisciplinares de produtos digitais aos físicos.",
         ],
         en: [
           "Hello, my name is <b> Rodrigo Gomes </b>! Driven by challenges, I am constantly involved in multidisciplinary projects from digital to physical products.",
