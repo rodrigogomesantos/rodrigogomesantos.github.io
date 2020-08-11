@@ -18,7 +18,7 @@ export default {
         en: '"Not everything we see is obvious!"',
         },
         text:{
-        pt: 'Trabalhar em projetos diversificados , ao lado de pessoas totalmente diferentes na personalidade ou área de atuação, me fez enchergar o mundo com outras perspectivas, me auxiliando a cada dia mais na resolução de problemas independente do seu gênero.',
+        pt: 'Trabalhar em projetos diversificados , ao lado de pessoas totalmente diferentes na personalidade ou área de atuação, me fez enxergar o mundo com outras perspectivas, me auxiliando a cada dia mais na resolução de problemas independente do seu gênero.',
         en: 'Working on diverse projects, alongside totally different people in their personality or area of activity, made me fill the world with other perspectives, helping me more and more in solving problems regardless of their type.',
         },
     };
