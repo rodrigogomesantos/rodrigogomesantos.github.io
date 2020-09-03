@@ -49,6 +49,10 @@ export default {
             title: "Educação formal",
             link: "#education",
           },
+          //   {
+          //   title: "Depoimento",
+          //   link: "#testimonial",
+          // },
         ],
 
         en: [
@@ -68,6 +72,10 @@ export default {
             title: "Formal Education",
             link: "#education",
           },
+          //   {
+          //   title: "Testimonial",
+          //   link: "#testimonial",
+          // },
         ],
       },
     };

@@ -9,6 +9,7 @@
       <Experience />
       <Skills />
       <Education />
+      <Testimonial />
     </div>
     <Contact />
   </div>
@@ -23,6 +24,7 @@ import Nav from "./components/Nav";
 import Introduction from "./components/Introduction";
 import Phrase from "./components/Phrase";
 import Contact from "./components/Contact";
+import Testimonial from "./components/Testimonial"
 
 // import "font-awesome/css/font-awesome.css"
 
@@ -40,6 +42,7 @@ export default {
     Phrase,
     Contact,
     Recognition,
+    Testimonial,
   },
   data() {
     return {

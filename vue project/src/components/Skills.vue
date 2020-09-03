@@ -123,7 +123,6 @@ export default {
     },
 
     validateHighlight(skillsIten) {
-      console.log(!!this.highlightedItens.find((skill) => skill == skillsIten));
       return !!this.highlightedItens.find((skill) => skill == skillsIten);
     },
 
