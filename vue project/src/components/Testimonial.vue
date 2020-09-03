@@ -2,9 +2,7 @@
   <section id="testimonial">
     <img :src="require('../assets/' + image)" v-bind:alt="imageAlt" />
     <div>
-      <h1>
-        <i>{{chooseLanguage(phrase)}}</i>
-      </h1>
+      <h1>{{chooseLanguage(phrase)}}</h1>
       <p>{{chooseLanguage(author)}}</p>
     </div>
   </section>
@@ -39,13 +37,14 @@ export default {
 @import "@/assets/scss/_variables.scss";
 
 #testimonial {
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
+ 
   img {
-    height: 100%;
+    height: 90%;
     display: block;
     margin-right: 1.2em;
   }
@@ -53,7 +52,8 @@ export default {
   h1 {
     text-align: left;
     margin: 0;
-    font-weight: normal;
+    font-weight: initial;
+    text-transform: initial;
   }
 
   p {
