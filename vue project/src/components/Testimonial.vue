@@ -17,8 +17,8 @@ export default {
   data() {
     return {
       phrase: {
-        pt: "“Ele é uma pessoa muito talentosa, orgulho da família ”",
-        en: '"He is a very talented person,the family\'s pride"',
+        pt: "“O Rodrigo é muito talentoso, é o orgulho da família ”",
+        en: '"Rodrigo is a very talented person,the family\'s pride"',
       },
       author: {
         pt: "Luciene Rufino | mãe do Rodrigo",
