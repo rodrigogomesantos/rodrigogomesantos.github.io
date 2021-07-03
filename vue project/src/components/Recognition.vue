@@ -3,7 +3,7 @@
   <h1>{{chooseLanguage(title)}}</h1>
   <div class="rec_container">
   <div class="rec_card" v-for="(recognition, index ) in chooseLanguage(recognitions)" :key="index">
-    <img :src="require('../assets/' + recognition.image)">
+    <img :src="require('../assets/' + recognition.image)" :alt="recognition.imageAlt">
     <h4>{{recognition.title}}</h4>
     <a :href="recognition.projectLink" target="_blank">{{recognition.project}} <i class="fas fa-link" v-show="recognition.projectLink"></i></a><br>
     <i>{{recognition.placement}}</i>

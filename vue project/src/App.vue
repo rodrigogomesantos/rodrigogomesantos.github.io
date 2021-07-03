@@ -46,7 +46,7 @@ export default {
   },
   data() {
     return {
-      logo: ROOT_PATH + require('./assets/perfil.png')
+      logo: ROOT_PATH + require('./assets/perfil.jpg')
     };
   },
   metaInfo() {

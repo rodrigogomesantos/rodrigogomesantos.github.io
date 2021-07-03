@@ -9,6 +9,8 @@ Vue.use(VueScrollactive);
 
 Vue.config.productionTip = false
 import "@/assets/scss/main.scss";
+import store from './store'
+import './registerServiceWorker'
 
 
 Vue.use(VueScrollReveal, {
@@ -20,6 +22,7 @@ Vue.use(VueScrollReveal, {
 });
 
 new Vue({
-  render: h => h(App),
+  store,
+  render: h => h(App)
 }).$mount('#app')
 
