@@ -37,7 +37,7 @@ export default {
             title: "Designer de Produto",
             subtitle: "Orakolo Técnologia - Curitiba, PR",
             text:
-              "Realização de Testes Beta, pesquisa de tendências em tecnologia e desenvolvimento de novos produtos - sejam eles em sheetmetal, injeção plástica, dentre outros materiais, partindo de ideias, desenvolvimento de mockups, protótipos ou réplicas."
+              "Realização de Testes Beta, pesquisa de tendências em tecnologia, UX/UI, front-end e desenvolvimento de novos produtos - sejam eles em sheetmetal, injeção plástica, dentre outros materiais, partindo de ideias, desenvolvimento de mockups, protótipos ou réplicas."
           },
           {
             date: "mar. de 2018 - out. de 2018",
@@ -52,21 +52,21 @@ export default {
             subtitle:
               "Comissão Organizadora do N Design 2017, CONDe - Curitiba, PR",
             text:
-              'Trabalhar na organização de um evento que dura uma semana para 1200 pessoas, foi sem dúvidas, uma experiência de muito aprendizado. <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ZNvER9v1dpSasDKHDf1PZulWuUBmgB6XqkDqN31oD3I/edit#gid=1048042397">Saiba mais<a/> '
+              'Trabalhar na organização de um evento que dura uma semana para 1200 pessoas, foi sem dúvidas, uma experiência de muito aprendizado, Atuei no fechamento de contratos, busca de fornecedores, planejamento e organização de toda a estrutura do evento. <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ZNvER9v1dpSasDKHDf1PZulWuUBmgB6XqkDqN31oD3I/edit#gid=1048042397">Saiba mais<a/> '
           },
           {
             date: "out. de 2016 - agora",
             title: "Freelancer",
             subtitle: "Rapazes de Aluguel e outros - Curitiba, PR",
             text:
-              "Fazer freelas sempre foi um jeito de juntar uma graninha extra. Essas experiências me proporcionaram aprendizados incríveis, da parte de negócios à parte técnica. Trabalhando em diversos setores, como na automação de um estande de tiro, construção de site e design gráfico."
+              "Fazer freelas sempre foi um jeito de juntar uma graninha extra, seja pra investir ou ajudar nas despesas. Essas experiências me proporcionaram aprendizados incríveis, da parte de negócios à parte técnica. Nunca limitado as ferramentas, desenvolvi projetos de automação, construção civil, sites, passando pela parte de UX/UI, front-end, desenvolvimento de produto, design gráfico entre outros"
           },
           {
             date: "mar. de 2015 - out. de 2016",
             title: "Estágio em Design",
             subtitle: "Departamento de Extensão da UTFPR - Curitiba, PR",
             text:
-              "Tive a oportunidade de trabalhar com uma ex-empresária e atual professora, que me ensinou muito sobre design. Com ela, pude trabalhar em peças gráficas, produtos, construção de sites e edição de vídeo."
+              "Tive a oportunidade de trabalhar com uma ex-empresária e atual professora, que me ensinou muito sobre design. Com ela, pude trabalhar em peças gráficas, produtos, desenvolvimento front-end e edição de vídeo."
           },
           
         ],
@@ -77,7 +77,7 @@ export default {
             title: "Product Designer",
             subtitle: "Orakolo Técnica - Curitiba, PR",
             text:
-              "Conducting beta tests, researching trends in technology until the development of new products. Whether using sheetmetal, plastic injection ... Based on the idea, development of mockups, prototypes or replicas."
+              "Conducting beta tests, UX/UI, front-end, researching trends in technology until the development of new products. Whether using sheetmetal, plastic injection ... Based on the idea, development of mockups, prototypes or replicas."
           },
           {
             date: "Mar. 2018 - Oct. 2018",
@@ -99,14 +99,14 @@ export default {
             title: "Freelancer",
             subtitle: "Rental Guys and Others - Curitiba, PR",
             text:
-              "Making freelance jobs has always been a way to save some extra money, but as a result I gained a profound learning experience, from the busines part to the technical part. Working as a Husband for Rent, automation of a shooting range, website construction, graphic designer."
+              "Making freelance jobs has always been a way to save some extra money, but as a result I gained a profound learning experience, from the busines part to the technical part. Working as a Husband for Rent, automation of a shooting range, front-end development, graphic designer and others."
           },
           {
             date: "Mar. 2015 - Oct. 2016",
             title: "Design Internship",
             subtitle: "UTFPR Extension Department - Curitiba, PR",
             text:
-              "I had the opportunity to work with a former businesswoman and current teacher, she taught me a lot about design! Working on graphic pieces, products, website building and video editing."
+              "I had the opportunity to work with a former businesswoman and current teacher, she taught me a lot about design! Working on graphic pieces, products, front-end development and video editing."
           }
         ]
       }

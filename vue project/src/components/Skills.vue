@@ -65,10 +65,10 @@ export default {
             "Premiere",
             "Figma",
           ],
-          Coding: ["CSS/SCSS", "HTML", "JavaScript", "VueJS", "Python"],
+          Coding: ["CSS/SCSS", "HTML", "JavaScript", "VueJS", "Python", "Git"],
         },
 
-        en: {"UI/UX": ["Figma", "Photoshop", "Illustrator", "CSS / SCSS", "HTML"],
+        en: {"UI/UX": ["Figma", "Photoshop", "Illustrator", "CSS/SCSS", "HTML"],
            Maker: [
              "3D Printer",
              "CAD / CAM",
@@ -98,7 +98,7 @@ export default {
              "Premiere",
              "Figma",
            ],
-           Coding: ["CSS / SCSS", "HTML", "JavaScript", "VueJS", "Python"],
+           Coding: ["CSS/SCSS", "HTML", "JavaScript", "VueJS", "Python", "Git"],
         },
       },
       skillsItens: [],

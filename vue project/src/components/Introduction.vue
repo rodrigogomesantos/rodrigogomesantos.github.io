@@ -33,12 +33,14 @@ export default {
     return {
       title: {
         pt: [
+          "Desenvolvedor Front-End",
           "Designer Gráfico",
           "Designer de Produto",
           "UX & UI Designer",
           "Maker",
         ],
         en: [
+          "Front-End Developer",
           "Graphic Designer",
           "Product Designer",
           "UX & UI Designer",
