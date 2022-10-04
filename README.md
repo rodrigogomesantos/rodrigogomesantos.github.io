@@ -1,4 +1,24 @@
-# rodrigogomesantos.github.io
-Personal page
+# personal-page
 
-This is my personal page, I used a modular structure. I didn't use any API to get data, but I developed using objects to populate the components. This was my first project with Vue. Nowaday, i use Apollo with GraphQL and Websockets. 
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
