@@ -28,10 +28,17 @@ export default {
     return {
       titles:{
         pt: 'Experiências',
-        en: 'Expiriences',
+        en: 'Experiences',
         },
       experiences: {
         pt: [
+          {
+            date: "jun. de 2021 - agora",
+            title: "Designer Industrial",
+            subtitle: "Zu Design - Curitiba, PR",
+            text:
+              "Pesquisa de novas tecnologias, desenvolvimento de equipamento industriais e prototipação de novos produtos"
+          },
           {
             date: "nov. de 2018 - agora",
             title: "Designer de Produto",
@@ -55,7 +62,7 @@ export default {
               'Trabalhar na organização de um evento que dura uma semana para 1200 pessoas, foi sem dúvidas, uma experiência de muito aprendizado, Atuei no fechamento de contratos, busca de fornecedores, planejamento e organização de toda a estrutura do evento. <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ZNvER9v1dpSasDKHDf1PZulWuUBmgB6XqkDqN31oD3I/edit#gid=1048042397">Saiba mais<a/> '
           },
           {
-            date: "out. de 2016 - agora",
+            date: "out. de 2016 - jun. de 2021",
             title: "Freelancer",
             subtitle: "Rapazes de Aluguel e outros - Curitiba, PR",
             text:
@@ -72,8 +79,15 @@ export default {
         ],
 
         en: [
+                {
+            date: "Jun. de 2021 - agora",
+            title: "Industrial Designer",
+            subtitle: "Zu Design - Curitiba, PR",
+            text:
+              "Research of new technologies, development of industrial equipment and prototyping of new products."
+          },
           {
-            date: "Nov 2018 - now",
+            date: "Nov 2018 - Nov. 2022",
             title: "Product Designer",
             subtitle: "Orakolo Técnica - Curitiba, PR",
             text:
@@ -95,7 +109,7 @@ export default {
               'Working on organizing an event that lasts a week for 1200 people, was without a doubt, incredible. <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ZNvER9v1dpSasDKHDf1PZulWuUBmgB6XqkDqN31oD3I/edit#gid=1048042397"> Learn more <a/> '
           },
           {
-            date: "Oct. 2016 - now",
+            date: "Oct. 2016 - Jun. de 2021",
             title: "Freelancer",
             subtitle: "Rental Guys and Others - Curitiba, PR",
             text:
