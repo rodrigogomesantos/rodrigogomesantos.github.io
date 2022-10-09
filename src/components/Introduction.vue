@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import { setTimeout, setInterval } from 'timers';
+// import { setTimeout, setInterval } from 'timers';
 import mixins from '../mixins';
 
 export default {
@@ -68,6 +68,10 @@ export default {
     };
   },
 
+  created() {
+    setTimeout(() => this.typeText(), this.newTextDelay + 200);
+  },
+
   methods: {
     typeText() {
       const typeArray = this.chooseLanguage(this.title);
@@ -76,10 +80,10 @@ export default {
         if (!this.typeStatus) this.typeStatus = true;
         this.typeValue += typeArray[this.typeArrayIndex].charAt(this.charIndex);
         this.charIndex += 1;
-        setTimeout(this.typeText, this.typingSpeed);
+        setTimeout(() => this.typeText(), this.typingSpeed);
       } else {
         this.typeStatus = false;
-        setTimeout(this.eraseText, this.newTextDelay);
+        setTimeout(() => this.eraseText(), this.newTextDelay);
       }
     },
 
@@ -93,25 +97,19 @@ export default {
           this.charIndex - 1,
         );
         this.charIndex -= 1;
-        setTimeout(this.eraseText, this.erasingSpeed);
+        setTimeout(() => this.eraseText(), this.erasingSpeed);
       } else {
         this.typeStatus = false;
         this.typeArrayIndex += 1;
         if (this.typeArrayIndex >= typeArray.length) this.typeArrayIndex = 0;
-        setTimeout(this.typeText, this.typingSpeed + 1000);
+        setTimeout(() => this.typeText(), this.typingSpeed + 1000);
       }
     },
-  },
-
-  created() {
-    setInterval(console.log('oii'), this.newTextDelay + 200);
-    setTimeout(console.log('oii'), this.newTextDelay + 200);
-    setTimeout(this.typeText, this.newTextDelay + 200);
   },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '@/assets/scss/_variables.scss';
 @import '@/assets/scss/learnMore.scss';
 
@@ -134,11 +132,12 @@ export default {
   }
 
   span.cursor {
-    display: inline-block;
+    display: inline-grid;
     margin-left: 0.2em;
-    width: 0.5em;
-    animation: cursorBlink 1s infinite;
-    height: 0.1em;
+    width: 0.65em;
+    animation: cursorBlink-0b1e4f4a 1s infinite;
+    height: 0.09em;
+    vertical-align: -webkit-baseline-middle;
   }
 
   span.cursor.typing {

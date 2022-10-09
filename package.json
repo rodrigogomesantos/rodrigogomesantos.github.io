@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --fix",
     "build": "vue-cli-service build --no-fix",
     "lint": "vue-cli-service lint"
   },
@@ -11,14 +11,15 @@
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "core-js": "^3.6.5",
     "font-awesome": "^4.7.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
     "register-service-worker": "^1.7.1",
     "sass": "^1.55.0",
-    "timers-browserify": "^2.0.12",
     "vue": "^2.6.11",
     "vue-meta": "^2.4.0",
     "vue-scroll-reveal": "^1.0.11",
     "vue-scrollactive": "^0.9.3",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "webpack": "^5.74.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.5.4",
