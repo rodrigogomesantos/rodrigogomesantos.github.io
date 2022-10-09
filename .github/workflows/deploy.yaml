@@ -24,7 +24,7 @@ jobs:
       - name: deploy to rods-pages
         run: |
           npm i
-          NODE_ENV=production npm run build --no-fix
+          NODE_ENV=production npm run build --skip-plugins @vue/cli-plugin-eslint
           cd dist
           git init
           git add -A
