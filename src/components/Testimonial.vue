@@ -1,3 +1,5 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+
 <template>
   <section id="testimonial">
     <img :src="require('../assets/' + image)" v-bind:alt="imageAlt" />
@@ -9,23 +11,22 @@
 </template>
 
 <script>
-import mixins from "../mixins.js";
+import mixins from '../mixins';
 
 export default {
-  name: "Testimonial",
   mixins: [mixins],
   data() {
     return {
       phrase: {
-        pt: "“O Rodrigo é muito talentoso, é o orgulho da família ”",
+        pt: '“O Rodrigo é muito talentoso, é o orgulho da família ”',
         en: '"Rodrigo is a very talented person,the family\'s pride"',
       },
       author: {
-        pt: "Luciene Rufino | mãe do Rodrigo",
+        pt: 'Luciene Rufino | mãe do Rodrigo',
         en: "Luciene Rufino | Rodrigo's mother",
       },
-      image: "mother.png",
-      imageAlt: "Radio Juno em perspectiva",
+      image: 'mother.png',
+      imageAlt: 'Radio Juno em perspectiva',
     };
   },
 
@@ -42,7 +43,6 @@ export default {
     flex-direction: row;
     align-items: center;
 
- 
   img {
     height: 90%;
     display: block;

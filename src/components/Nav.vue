@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <scrollactive :offset="30" class="nav scrollactive" active-class="active">
     <ul class="nav-list button">
@@ -12,42 +13,43 @@
           <p>{{nav.title}}</p>
         </a>
       </li>
-      <li class="portifolio">
-        <a href="https://www.behance.net/rodrigomes" target="_black">{{chooseLanguage(portifolio)}}</a>
+      <li class="portfolio">
+        <a href="https://www.behance.net/rodrigomes" target="_black">{{chooseLanguage(portfolio)}}</a>
       </li>
     </ul>
   </scrollactive>
 </template>
 
 <script>
-import mixins from "../mixins.js";
+import mixins from '../mixins';
 
 export default {
-  name: "Nav",
+  // eslint-disable-next-line vue/multi-word-component-names, vue/no-reserved-component-names
+  name: 'Nav',
   mixins: [mixins],
   data() {
     return {
-      portifolio: {
-        pt: "Portifólio",
-        en: "Portifolio",
+      portfolio: {
+        pt: 'Portifólio',
+        en: 'Portfolio',
       },
       nav: {
         pt: [
           {
-            title: "Reconhecimentos",
-            link: "#recognition ",
+            title: 'Reconhecimentos',
+            link: '#recognition ',
           },
           {
-            title: "Experiências",
-            link: "#experience",
+            title: 'Experiências',
+            link: '#experience',
           },
           {
-            title: "Habilidades",
-            link: "#skills",
+            title: 'Habilidades',
+            link: '#skills',
           },
           {
-            title: "Educação formal",
-            link: "#education",
+            title: 'Educação formal',
+            link: '#education',
           },
           //   {
           //   title: "Depoimento",
@@ -57,20 +59,20 @@ export default {
 
         en: [
           {
-            title: "Recognition",
-            link: "#recognition ",
+            title: 'Recognition',
+            link: '#recognition ',
           },
           {
-            title: "Experience",
-            link: "#experience",
+            title: 'Experience',
+            link: '#experience',
           },
           {
-            title: "Skills",
-            link: "#skills",
+            title: 'Skills',
+            link: '#skills',
           },
           {
-            title: "Formal Education",
-            link: "#education",
+            title: 'Formal Education',
+            link: '#education',
           },
           //   {
           //   title: "Testimonial",
@@ -107,7 +109,7 @@ export default {
     list-style: none;
     padding: 0;
 
-    .portifolio {
+    .portfolio {
       writing-mode: vertical-lr;
       text-orientation: mixed;
       display: block;
@@ -148,7 +150,7 @@ export default {
       &:hover .portifolio {
         color: $color1;
         border-color: $color1;
-        
+
       }
 
       &:first-child {

@@ -1,9 +1,10 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section id="intro">
     <div class="intro">
       <h2>
         <span class="typed-text">{{ typeValue }}</span>
-        <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
+        <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
       </h2>
       <p v-html="String(chooseLanguage(text))"></p>
       <a
@@ -11,9 +12,7 @@
         target="_blank"
       >
         <div class="info-button button">
-          <p>
-            <span>Saiba</span> +
-          </p>
+          <p><span>Saiba</span> +</p>
           <p />
           <div class="info-button-inner"></div>
         </div>
@@ -24,8 +23,8 @@
 </template>
 
 <script>
-import { setTimeout } from "timers";
-import mixins from "../mixins.js";
+import { setTimeout, setInterval } from 'timers';
+import mixins from '../mixins';
 
 export default {
   mixins: [mixins],
@@ -33,33 +32,32 @@ export default {
     return {
       title: {
         pt: [
-          "Desenvolvedor Front-End",
-          "Designer Gráfico",
-          "Designer de Produto",
-          "UX & UI Designer",
-          "Maker",
+          'Desenvolvedor Front-End',
+          'Designer Gráfico',
+          'Designer de Produto',
+          'UX & UI Designer',
+          'Maker',
         ],
         en: [
-          "Front-End Developer",
-          "Graphic Designer",
-          "Product Designer",
-          "UX & UI Designer",
-          "Maker",
+          'Front-End Developer',
+          'Graphic Designer',
+          'Product Designer',
+          'UX & UI Designer',
+          'Maker',
         ],
       },
       text: {
         pt: [
-          // A <b>25 anos</b> atrás, nascia em SP um cara chamado <b>Rodrigo</b>! Que hoje, vivendo em <b>Curitiba</b>, busca soluções criativas para resolver problemas.
-          "Olá, meu nome é <b>Rodrigo Gomes</b>! Movido por desafios, estou o tempo todo envolvido em projetos multidisciplinares de produtos digitais aos físicos.",
+          'Olá, meu nome é <b>Rodrigo Gomes</b>! Movido por desafios, estou o tempo todo envolvido em projetos multidisciplinares de produtos digitais aos físicos.',
         ],
         en: [
-          "Hello, my name is <b> Rodrigo Gomes </b>! Driven by challenges, I am constantly involved in multidisciplinary projects from digital to physical products.",
+          'Hello, my name is <b> Rodrigo Gomes </b>! Driven by challenges, I am constantly involved in multidisciplinary projects from digital to physical products.',
         ],
       },
-      image: "juno.png",
-      imageAlt: "Radio Juno em perspectiva",
+      image: 'juno.png',
+      imageAlt: 'Radio Juno em perspectiva',
 
-      typeValue: "",
+      typeValue: '',
       typeStatus: false,
       // typeArray: ["fun", "awesome", "a journey", "life"],
       typingSpeed: 200,
@@ -72,7 +70,7 @@ export default {
 
   methods: {
     typeText() {
-      var typeArray = this.chooseLanguage(this.title);
+      const typeArray = this.chooseLanguage(this.title);
 
       if (this.charIndex < typeArray[this.typeArrayIndex].length) {
         if (!this.typeStatus) this.typeStatus = true;
@@ -86,13 +84,13 @@ export default {
     },
 
     eraseText() {
-      var typeArray = this.chooseLanguage(this.title);
+      const typeArray = this.chooseLanguage(this.title);
 
       if (this.charIndex > 0) {
         if (!this.typeStatus) this.typeStatus = true;
         this.typeValue = typeArray[this.typeArrayIndex].substring(
           0,
-          this.charIndex - 1
+          this.charIndex - 1,
         );
         this.charIndex -= 1;
         setTimeout(this.eraseText, this.erasingSpeed);
@@ -106,14 +104,16 @@ export default {
   },
 
   created() {
+    setInterval(console.log('oii'), this.newTextDelay + 200);
+    setTimeout(console.log('oii'), this.newTextDelay + 200);
     setTimeout(this.typeText, this.newTextDelay + 200);
   },
 };
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/_variables.scss";
-@import "../assets/scss/learnMore.scss";
+@import '@/assets/scss/_variables.scss';
+@import '@/assets/scss/learnMore.scss';
 
 .intro {
   font-size: 1em;

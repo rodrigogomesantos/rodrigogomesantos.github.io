@@ -1,3 +1,5 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+
 <template>
   <section id="recognition">
   <h1>{{chooseLanguage(title)}}</h1>
@@ -5,7 +7,8 @@
   <div class="rec_card" v-for="(recognition, index ) in chooseLanguage(recognitions)" :key="index">
     <img :src="require('../assets/' + recognition.image)" :alt="recognition.imageAlt">
     <h4>{{recognition.title}}</h4>
-    <a :href="recognition.projectLink" target="_blank">{{recognition.project}} <i class="fas fa-link" v-show="recognition.projectLink"></i></a><br>
+    <a :href="recognition.projectLink" target="_blank">{{recognition.project}}
+      <i class="fas fa-link" v-show="recognition.projectLink"></i></a><br>
     <i>{{recognition.placement}}</i>
   </div>
   </div>
@@ -13,71 +16,71 @@
 </template>
 
 <script>
-import mixins from "../mixins.js";
+import mixins from '../mixins';
 
 export default {
   mixins: [mixins],
   data() {
     return {
       title: {
-        pt: "Reconhecimentos",
-        en: "Recognition",
+        pt: 'Reconhecimentos',
+        en: 'Recognition',
       },
       recognitions: {
         pt: [
-        {
-          image: "driftUtf.jpg",
-          imageAlt: "o Shi Drift Trike ao centro da imagem em uma exposição na universidade UTFPR",
-          title: "2016 - UTFPR Faz Design",
-          project: "Shi Drift Trike",
-          projectLink: "https://www.behance.net/gallery/45138823/Shi-Drift-Trike",
-          placement: "Menção Honrosa",
-        },
-        {
-          image: "driftMon.jpg",
-          imageAlt: "o Shi Drift Trike ao centro da imagem em uma exposição no Museu Oscar Nyemaier",
-          title: "2016 - Prêmio Internacional de Design Objeto: Brasil",
-          project: "Shi Drift Trike",
-          projectLink: "https://www.behance.net/gallery/45138823/Shi-Drift-Trike",
-          placement: "Bronze",
-        },
-        {
-          image: "bomDesign.jpg",
-          imageAlt: "Eu e minha equipe segurando o trofeu e recebemdo o premio em um pauco",
-          title: "2019 - Prêmio Bom Design",
-          project: "Retrofit torno CNC",
-          projectLink: false,
-          placement: "Menção Honrosa",
-        },
+          {
+            image: 'driftUtf.jpg',
+            imageAlt: 'o Shi Drift Trike ao centro da imagem em uma exposição na universidade UTFPR',
+            title: '2016 - UTFPR Faz Design',
+            project: 'Shi Drift Trike',
+            projectLink: 'https://www.behance.net/gallery/45138823/Shi-Drift-Trike',
+            placement: 'Menção Honrosa',
+          },
+          {
+            image: 'driftMon.jpg',
+            imageAlt: 'o Shi Drift Trike ao centro da imagem em uma exposição no Museu Oscar Nyemaier',
+            title: '2016 - Prêmio Internacional de Design Objeto: Brasil',
+            project: 'Shi Drift Trike',
+            projectLink: 'https://www.behance.net/gallery/45138823/Shi-Drift-Trike',
+            placement: 'Bronze',
+          },
+          {
+            image: 'bomDesign.jpg',
+            imageAlt: 'Eu e minha equipe segurando o trofeu e recebemdo o premio em um pauco',
+            title: '2019 - Prêmio Bom Design',
+            project: 'Retrofit torno CNC',
+            projectLink: false,
+            placement: 'Menção Honrosa',
+          },
 
-      ],
+        ],
         en: [
           {
-          image: "driftUtf.jpg",
-          imageAlt: "the Shi Drift Trike in the center of the image at an exhibition at UTFPR University",
-          title: "2016 - UTFPR Makes Design",
-          project: "Shi Drift Trike",
-          projectLink: "https://www.behance.net/gallery/45138823/Shi-Drift-Trike",
-          placement: "Honorable Mention",
-        },
-        {
-          image: "driftMon.jpg",
-          imageAlt: "the Shi Drift Trike in the center of the image in an exhibition at the Oscar Nyemaier Museum",
-          title: "2016 - International Design Award Object: Brazil",
-          project: "Shi Drift Trike",
-          projectLink: "https://www.behance.net/gallery/45138823/Shi-Drift-Trike",
-          placement: "Bronze",
-        },
-        {
-          image: "bomDesign.jpg",
-          imageAlt: "Me and my team holding the trophy and receiving the prize in a pauco",
-          title: "2019 - Bom Design Award",
-          project: "Retrofit CNC lathe",
-          projectLink: false,
-          placement: "Honorable Mention",
-        },
+            image: 'driftUtf.jpg',
+            imageAlt: 'the Shi Drift Trike in the center of the image at an exhibition at UTFPR University',
+            title: '2016 - UTFPR Makes Design',
+            project: 'Shi Drift Trike',
+            projectLink: 'https://www.behance.net/gallery/45138823/Shi-Drift-Trike',
+            placement: 'Honorable Mention',
+          },
+          {
+            image: 'driftMon.jpg',
+            imageAlt: 'the Shi Drift Trike in the center of the image in an exhibition at the Oscar Nyemaier Museum',
+            title: '2016 - International Design Award Object: Brazil',
+            project: 'Shi Drift Trike',
+            projectLink: 'https://www.behance.net/gallery/45138823/Shi-Drift-Trike',
+            placement: 'Bronze',
+          },
+          {
+            image: 'bomDesign.jpg',
+            imageAlt: 'Me and my team holding the trophy and receiving the prize in a pauco',
+            title: '2019 - Bom Design Award',
+            project: 'Retrofit CNC lathe',
+            projectLink: false,
+            placement: 'Honorable Mention',
+          },
         ],
-        },
+      },
     };
   },
 

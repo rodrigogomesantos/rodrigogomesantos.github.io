@@ -13,13 +13,12 @@
     "font-awesome": "^4.7.0",
     "register-service-worker": "^1.7.1",
     "sass": "^1.55.0",
+    "timers-browserify": "^2.0.12",
     "vue": "^2.6.11",
     "vue-meta": "^2.4.0",
     "vue-scroll-reveal": "^1.0.11",
     "vue-scrollactive": "^0.9.3",
-    "vuex": "^3.4.0",
-    "timers": "^0.1.1"
-
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.5.4",
@@ -28,8 +27,8 @@
     "@vue/cli-plugin-pwa": "~5.0.8",
     "@vue/cli-plugin-vuex": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint": "^8.24.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "9.6.0",
     "sass-loader": "^9.0.3",

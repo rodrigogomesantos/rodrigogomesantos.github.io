@@ -1,22 +1,24 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+
 <template>
   <section id="contact"></section>
 </template>
 
 <script>
-import mixins from "../mixins.js";
+import mixins from '../mixins';
 
 export default {
   mixins: [mixins],
   data() {
     return {
       title: {
-        pt: "Designer Gráfico",
-        en: "asdasdad",
+        pt: 'Designer Gráfico',
+        en: 'asdasdad',
       },
       icons: [
         {
-          image: "Início",
-          link: "#intro",
+          image: 'Início',
+          link: '#intro',
         },
       ],
     };
@@ -24,7 +26,7 @@ export default {
 
   methods: {
   },
-  
+
 };
 </script>
 

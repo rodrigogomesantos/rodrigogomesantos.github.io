@@ -14,42 +14,42 @@
 </template>
 
 <script>
-import mixins from "../mixins.js";
+import mixins from '../mixins';
 
 export default {
-  name: "FontAwesome",
+  name: 'FontAwesome',
   mixins: [mixins],
   data() {
     return {
       title: {
-        pt: "<b>Obrigado pela visita.</b><br><span>Quer conhecer mais projetos meus?<br>Bora bater um papo!</span>",
+        pt: '<b>Obrigado pela visita.</b><br><span>Quer conhecer mais projetos meus?<br>Bora bater um papo!</span>',
         en: "<b>Thanks for coming.</b><br><span>Do you wanna know more about my projects? Let's chat.</span>",
       },
       icons: [
         {
-          class: "fab fa-behance",
-          link: "https://www.behance.net/rodrigomes",
+          class: 'fab fa-behance',
+          link: 'https://www.behance.net/rodrigomes',
         },
         {
-          class: "fab fa-instagram",
-          link: "https://www.instagram.com/obvio.design/",
+          class: 'fab fa-instagram',
+          link: 'https://www.instagram.com/obvio.design/',
         },
         {
-          class: "far fa-envelope",
-          link: "mailto:rodrigogomes51@gmail.com",
+          class: 'far fa-envelope',
+          link: 'mailto:rodrigogomes51@gmail.com',
         },
         {
-          class: "fab fa-whatsapp",
+          class: 'fab fa-whatsapp',
           link:
-            "https://api.whatsapp.com/send?phone=41988756100&text=Estava%20dando%20uma%20olhada%20no%20seu%20site...",
+            'https://api.whatsapp.com/send?phone=41988756100&text=Estava%20dando%20uma%20olhada%20no%20seu%20site...',
         },
         {
-          class: "fab fa-github",
-          link: "https://github.com/rodrigogomesantos",
+          class: 'fab fa-github',
+          link: 'https://github.com/rodrigogomesantos',
         },
         {
-          class: "fab fa-linkedin-in",
-          link: "https://www.linkedin.com/in/rodrigomesantos/",
+          class: 'fab fa-linkedin-in',
+          link: 'https://www.linkedin.com/in/rodrigomesantos/',
         },
       ],
     };
@@ -76,13 +76,13 @@ $fa-font-path: "~@fortawesome/fontawesome-free-webfonts/webfonts";
   min-height: 30vh;
   margin-top: -10em;
   padding-top: 13em;
-  
+
   p span{
     margin: 4em 0 2em 0;
     /* padding: 6em; */
     display: block;
     font-size: 1rem;
-    
+
   }
 
   .social {

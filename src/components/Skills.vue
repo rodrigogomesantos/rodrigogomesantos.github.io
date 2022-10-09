@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section id="skills">
     <h1>{{chooseLanguage(titles)}}</h1>
@@ -12,107 +13,108 @@
       </ul>
       <ul class="skills-itens">
         <li
-          v-bind:class="{'skills-itens-highlight': validateHighlight(skillsIten)}"
-          v-for="(skillsIten, index) in skillsItens"
+          v-bind:class="{'skills-itens-highlight': validateHighlight(skillsItem)}"
+          v-for="(skillsItem, index) in skillsItems"
           :key="index"
-        >{{skillsIten}}</li>
+        >{{skillsItem}}</li>
       </ul>
     </div>
   </section>
 </template>
 
 <script>
-import mixins from "../mixins";
+import mixins from '../mixins';
 
 export default {
   mixins: [mixins],
   data() {
     return {
       titles: {
-        pt: "Habilidades",
-        en: "Skills",
+        pt: 'Habilidades',
+        en: 'Skills',
       },
       skills: {
         pt: {
-          "UI/UX": ["Figma", "Photoshop", "Illustrator", "CSS/SCSS", "HTML"],
+          'UI/UX': ['Figma', 'Photoshop', 'Illustrator', 'CSS/SCSS', 'HTML'],
           Maker: [
-            "Impressora 3D",
-            "CAD/CAM",
-            "Marcenaria",
-            "Eltrônica",
-            "Eletrica",
-            "Serralheria",
-            "CNC",
-            "Arduino",
-            "IOT",
-            "Hidráulica"
+            'Impressora 3D',
+            'CAD/CAM',
+            'Marcenaria',
+            'Eltrônica',
+            'Eletrica',
+            'Serralheria',
+            'CNC',
+            'Arduino',
+            'IOT',
+            'Hidráulica',
           ],
           Produto: [
-            "Fusion 360",
-            "Inventor",
-            "Autocad",
-            "Injeção Plastica",
-            "Sheet Metal",
-            "Keyshot",
-            "Prototipagem Rápida",
-            "Materiais",
+            'Fusion 360',
+            'Inventor',
+            'Autocad',
+            'Injeção Plastica',
+            'Sheet Metal',
+            'Keyshot',
+            'Prototipagem Rápida',
+            'Materiais',
           ],
           Gráfico: [
-            "Photoshop",
-            "Illustrator",
-            "After Effects",
-            "InDesign",
-            "Premiere",
-            "Figma",
+            'Photoshop',
+            'Illustrator',
+            'After Effects',
+            'InDesign',
+            'Premiere',
+            'Figma',
           ],
-          Coding: ["CSS/SCSS", "HTML", "JavaScript", "VueJS", "Python", "Git"],
+          Coding: ['CSS/SCSS', 'HTML', 'JavaScript', 'VueJS', 'Python', 'Git'],
         },
 
-        en: {"UI/UX": ["Figma", "Photoshop", "Illustrator", "CSS/SCSS", "HTML"],
-           Maker: [
-             "3D Printer",
-             "CAD / CAM",
-             "Woodwork",
-             "Electronics",
-             "Electric",
-             "Metalwork",
-             "CNC",
-             "Arduino",
-             "IOT",
-           ],
-           "Industrial Design": [
-             "Fusion 360",
-             "Inventor",
-             "Autocad",
-             "Plastic injection",
-             "Sheet metal",
-             "Keyshot",
-             "Rapid Prototyping",
-             "Materials",
-           ],
-           Graph: [
-             "Photoshop",
-             "Illustrator",
-             "After Effects",
-             "InDesign",
-             "Premiere",
-             "Figma",
-           ],
-           Coding: ["CSS/SCSS", "HTML", "JavaScript", "VueJS", "Python", "Git"],
+        en: {
+          'UI/UX': ['Figma', 'Photoshop', 'Illustrator', 'CSS/SCSS', 'HTML'],
+          Maker: [
+            '3D Printer',
+            'CAD / CAM',
+            'Woodwork',
+            'Electronics',
+            'Electric',
+            'Metalwork',
+            'CNC',
+            'Arduino',
+            'IOT',
+          ],
+          'Industrial Design': [
+            'Fusion 360',
+            'Inventor',
+            'Autocad',
+            'Plastic injection',
+            'Sheet metal',
+            'Keyshot',
+            'Rapid Prototyping',
+            'Materials',
+          ],
+          Graph: [
+            'Photoshop',
+            'Illustrator',
+            'After Effects',
+            'InDesign',
+            'Premiere',
+            'Figma',
+          ],
+          Coding: ['CSS/SCSS', 'HTML', 'JavaScript', 'VueJS', 'Python', 'Git'],
         },
       },
-      skillsItens: [],
+      skillsItems: [],
       highlightedItens: [],
     };
   },
   created() {
-    let skillCategory = this.chooseLanguage(this.skills);
+    const skillCategory = this.chooseLanguage(this.skills);
     Object.keys(skillCategory).forEach((key) => {
       skillCategory[key].forEach((skill) => {
-        if (!this.skillsItens.includes(skill)) {
-          this.skillsItens.push(skill);
+        if (!this.skillsItems.includes(skill)) {
+          this.skillsItems.push(skill);
         }
-        this.shuffle(this.skillsItens);
+        this.shuffle(this.skillsItems);
       });
     });
   },
@@ -122,12 +124,12 @@ export default {
       this.highlightedItens = this.highlightedItens.concat(skillCategory);
     },
 
-    validateHighlight(skillsIten) {
-      return !!this.highlightedItens.find((skill) => skill == skillsIten);
+    validateHighlight(skillsItem) {
+      return !!this.highlightedItens.find((skill) => skill === skillsItem);
     },
 
     chooseSide(number) {
-      var resultado = number % 2 == 0 ? "direction-r" : "direction-l";
+      const resultado = number % 2 === 0 ? 'direction-r' : 'direction-l';
       return resultado;
     },
 
