@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --fix",
-    "build": "vue-cli-service build --no-fix",
+    "build": "vue-cli-service build --skip-plugins @vue/cli-plugin-eslint",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
