@@ -24,6 +24,7 @@ jobs:
       - name: deploy to rods-pages
         run: |
           npm i
+          npm i eslint eslint-plugin-jsx-a11y
           NODE_ENV=production npm run build
           cd dist
           git init
