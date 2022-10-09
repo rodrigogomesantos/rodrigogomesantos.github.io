@@ -24,7 +24,7 @@ jobs:
       - name: deploy to rods-pages
         run: |
           npm i
-          NODE_ENV=production npm run build
+          NODE_ENV=production npm run build --no-fix
           cd dist
           git init
           git add -A
