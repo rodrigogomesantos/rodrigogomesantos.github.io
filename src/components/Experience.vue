@@ -36,10 +36,16 @@ export default {
       experiences: {
         pt: [
           {
+            date: 'jan. de 2023 - agora',
+            title: 'Designer Industrial',
+            subtitle: 'Produteca - Curitiba, PR',
+            text: 'Dentre minhas principais atividades, destaco minha atuação como coordenador da área de desenvolvimento de produtos, onde aprimorei processos e conduzi projetos inovadores. Em uma frente distinta, também sou responsável pela manutenção, gestão e otimização de impressoras 3D, garantindo seu funcionamento eficaz para as diversas demandas do nosso ambiente de trabalho. Ademais, dediquei-me à criação da UX/UI e ao desenvolvimento Front-End de uma calculadora de orçamentos, utilizando o framework Nuxt3.js e AWS Lambda, proporcionando uma solução eficaz e user-friendly para a estimativa automatizada de custos dos nossos serviços. Adicionalmente, desenvolvi scripts para a automação de processos internos, o que contribuiu significativamente para a eficiência operacional e a agilidade na entrega de projetos.',
+          },
+          {
             date: 'jun. de 2021 - agora',
             title: 'Designer Industrial',
             subtitle: 'Zu Design - Curitiba, PR',
-            text: 'Pesquisa de novas tecnologias, desenvolvimento de equipamento industriais e prototipação de novos produtos',
+            text: 'Trabalhar no meu próprio negócio é um grande desafio com muitas responsabilidades, especialmente com uma equipe enxuta, o que me permite acumular diversas funções e ter uma visão holística do negócio. Minhas atividades principais incluem a criação e aperfeiçoamento na elaboração e apresentação de orçamentos com animações e renders, desenvolvimento de equipamentos industriais para setores como alimentício, gás e fundição, pesquisa ativa de novas tecnologias, prototipação e desenvolvimento de novos produtos. Além disso, foco na automação e criação de processos internos, tanto no desenvolvimento de produtos e máquinas, quanto na gestão financeira, elevando a eficiência operacional do negócio.',
           },
           {
             date: 'nov. de 2018 - agora',
@@ -76,10 +82,16 @@ export default {
 
         en: [
           {
-            date: 'Jun. de 2021 - agora',
+            date: 'jan. de 2023 - now',
+            title: 'Industrial Designer',
+            subtitle: 'Produteca - Curitiba, PR',
+            text: 'Among my main activities, I highlight my role as the coordinator of the product development area, where I improved processes and led innovative projects. In a distinct front, I am also responsible for the maintenance, management, and optimization of 3D printers, ensuring their effective operation for the various demands of our work environment. Furthermore, I dedicated myself to the creation of UX/UI and Front-End development of a budget calculator, utilizing the Nuxt3.js framework and AWS Lambda, providing an effective and user-friendly solution for the automated cost estimation of our services. Additionally, I developed scripts for the automation of internal processes, significantly contributing to operational efficiency and agility in project delivery.',
+          },
+          {
+            date: 'Jun. de 2021 - now',
             title: 'Industrial Designer',
             subtitle: 'Zu Design - Curitiba, PR',
-            text: 'Research of new technologies, development of industrial equipment and prototyping of new products.',
+            text: 'Running my own business is a great challenge with many responsibilities, especially with a lean team, which allows me to take on various roles and have a holistic view of the business. My main activities include the creation and improvement in the preparation and presentation of budgets with animations and renders, development of industrial equipment for sectors such as food, gas, and foundry, active research of new technologies, prototyping and development of new products. In addition, I focus on automation and creation of internal processes, both in the development of products and machines, and in financial management, elevating the operational efficiency of the business.',
           },
           {
             date: 'Nov 2018 - Nov. 2022',
